@@ -1,5 +1,5 @@
 const staticAssets = [
-    './demo/index.html',
+    './demo/',
     './demo/css/style.css',
     './particles.js',
     './particles.min.js',
