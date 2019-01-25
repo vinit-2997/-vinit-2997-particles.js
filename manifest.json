@@ -5,7 +5,7 @@
   "background_color": "#c1337b",
   "display": "standalone",
   "Scope": "/",
-  "start_url": "/vinit/demo/",
+  "start_url": "/vinit/demo/index",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
