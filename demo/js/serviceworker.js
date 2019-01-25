@@ -2,7 +2,7 @@ const staticAssets = [
     './demo/index.html',
     './demo/css/style.css',
     './particles.js',
-    './particles.min.js'
+    './particles.min.js',
     './demo/js/app.js',
     './demo/particles.json',
     './demo/js/lib/stats.js'
