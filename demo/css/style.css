@@ -45,6 +45,20 @@ canvas{
 
 
 /* ---- stats.js ---- */
+.myclass{
+z-index : 99999;
+text-align: center;
+}
+
+.button1111 {
+    position: absolute;
+    top: 50%;
+}
+
+.h21111 {
+    position: absolute;
+    top: 50%;
+}
 
 .count-particles{
   background: #000022;
@@ -93,4 +107,22 @@ canvas{
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+
+
+/*#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(8, 6, 17);  
+    left: 0px;
+    top: 0px;
+}
+*/
+
+#particles canvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
