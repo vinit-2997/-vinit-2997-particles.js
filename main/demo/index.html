@@ -12,29 +12,39 @@
 </head>
 
 <body>
+   <div class="et-hero-tabs-container">
+      <a class="et-hero-tab" href="#tab-MAIN">HOME</a>
+      <a class="et-hero-tab" href="#tab-ABOUT">ABOUT</a>
+      <a class="et-hero-tab" href="#tab-PROJECTS">PROJECTS</a>
+      <a class="et-hero-tab" href="#tab-CONTACT">CONTACT</a>
+      <a class="et-hero-tab" href="#tab-TERMINAL">TERMINAL</a>
+      <span class="et-hero-tab-slider"></span>
+    </div>
 
+    <div id="contTerminal" class="closedTerminal terminalsizeanimated" style="overflow:visible !important">
+      <div id="onlineTerminal" contenteditable spellcheck="false"></div>
+    <a  onclick="launchJSTerminal();" class="terminalHandle"></a>
+  </div>
 
-<!-- <div class="count-particles">
-  <span class="js-count-particles">--</span> particles
-</div>
- -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>
+    if (!window.jQuery) {
+      document.write('<script src="js/jquery.min.js"><\/script>');
+    }
+  </script>
 
  <div class = 'myclass'>
-<!--   all your other divs part of the web content (images,text,etc) -->
-<!-- <h2 class="h21111">The Button Element</h2> -->
-
- 
-  <!-- <button class="button1111" onclick="alert('Hello world!')">Click Me!</button> -->
 
 
 
+ <!-- Hero -->
+  <section class="et-hero-tabs" id = "tab-MAIN">
 
 
+    
+  <div id="particles-js">
 
-
-<!-- this is the markup. you can change the details (your own name, your own avatar etc.) but don’t change the basic structure! -->
-
-<aside class="profile-card">
+    <aside class="profile-card">
 
   <header>
 
@@ -141,20 +151,63 @@ Maker and Startup Enthusiast</p>
 </aside>
 
 
+ <!--    <div class="et-hero-tabs-container">
+      <a class="et-hero-tab" href="#tab-HOME">HOME</a>
+      <a class="et-hero-tab" href="#tab-ABOUT">ABOUT</a>
+      <a class="et-hero-tab" href="#tab-PROJECTS">PROJECTS</a>
+      <a class="et-hero-tab" href="#tab-CONTACT">CONTACT</a>
+      <a class="et-hero-tab" href="#tab-TERMINAL">TERMINAL</a>
+      <span class="et-hero-tab-slider"></span>
+    </div> -->
+  </section>
+
+  <!-- Main -->
+  <main class="et-main">
+<!--     <section class="et-slide" id="tab-HOME">
+      <h1>HOME</h1>
+      <h3>something about HOME</h3>
+    </section> -->
+    <section class="et-slide" id="tab-ABOUT">
+      <h1>ABOUT</h1>
+      <h3>something about ABOUT</h3>
+    </section>
+    <section class="et-slide" id="tab-PROJECTS">
+      <h1>PROJECTS</h1>
+      <h3>something about PROJECTS</h3>
+    </section>
+    <section class="et-slide" id="tab-CONTACT">
+      <h1>CONTACT</h1>
+      <h3>something about CONTACT</h3>
+    </section>
+    <section class="et-slide" id="tab-TERMINAL">
+      <h1>TERMINAL</h1>
+      <h3>something about TERMINAL</h3>
+    </section>
+  </main>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
 
 
 
 
+
+<!-- 
 </div>
 
-<!-- particles.js container -->
+particles.js container
 <div id="particles-js">
 
-</div>
+</div> -->
 
 <!-- scripts -->
-
+<script src="../pipes.js"></script>
 <script src="../particles.js"></script>
+
+
+<script src="js/terminal.js"></script>
 
 <script src="js/app.js"></script>
 
