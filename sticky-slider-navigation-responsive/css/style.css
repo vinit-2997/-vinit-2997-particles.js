@@ -8,7 +8,7 @@ a {
 
 .et-hero-tabs,
 .et-slide {
-/*  display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -16,7 +16,7 @@ a {
   position: relative;
   background: #eee;
   text-align: center;
-  padding: 0 2em;*/
+  padding: 0 2em;
 }
 .et-hero-tabs h1,
 .et-slide h1 {

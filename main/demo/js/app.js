@@ -19,17 +19,17 @@ particlesJS('particles-js',
         "value": 80,
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 1000
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#ffff00"
       },
       "shape": {
         "type": "circle",
         "stroke": {
           "width": 0,
-          "color": "#000000"
+          "color": "#0000ff"
         },
         "polygon": {
           "nb_sides": 5
@@ -41,37 +41,37 @@ particlesJS('particles-js',
         }
       },
       "opacity": {
-        "value": 0.5,
+        "value": 1,
         "random": false,
         "anim": {
           "enable": false,
-          "speed": 1,
-          "opacity_min": 0.1,
+          "speed": 0.00000005,
+          "opacity_min": 1,
           "sync": false
         }
       },
       "size": {
-        "value": 5,
+        "value": 7,
         "random": true,
         "anim": {
           "enable": false,
           "speed": 40,
-          "size_min": 0.1,
+          "size_min": 1,
           "sync": false
         }
       },
       "line_linked": {
         "enable": true,
-        "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.4,
+        "distance": 300,
+        "color": "#ffff00",
+        "opacity": 0.7,
         "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 6,
+        "speed": 7,
         "direction": "none",
-        "random": false,
+        "random": true,
         "straight": false,
         "out_mode": "out",
         "attract": {
@@ -86,11 +86,12 @@ particlesJS('particles-js',
       "events": {
         "onhover": {
           "enable": true,
-          "mode": "repulse"
+          "mode": "grab"
         },
         "onclick": {
           "enable": true,
-          "mode": "push"
+          "mode": "push",
+
         },
         "resize": true
       },
@@ -98,7 +99,9 @@ particlesJS('particles-js',
         "grab": {
           "distance": 400,
           "line_linked": {
-            "opacity": 1
+            "opacity": 1,
+             "color": "#00ff15"
+
           }
         },
         "bubble": {
@@ -131,15 +134,15 @@ particlesJS('particles-js',
   }
 
 );
-window.addEventListener("load",(e) => {
-    console.log("called");
-  if ('serviceWorker' in navigator) {
-    try {
-      navigator.serviceWorker.register('./js/serviceworker.js');
-      console.log('SW registered');
-    } catch (error) {
-      console.log('SW failed');
+// window.addEventListener("load",(e) => {
+//     console.log("called");
+//   if ('serviceWorker' in navigator) {
+//     try {
+//       navigator.serviceWorker.register('js/serviceworker.js');
+//       console.log('SW registered');
+//     } catch (error) {
+//       console.log('SW failed');
 
-    }
-  }
-});
+//     }
+//   }
+// });

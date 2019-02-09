@@ -144,7 +144,7 @@ window._is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mi
 				});
 				setTimeout(function () {
 					$('#contTerminal').removeClass('terminalsizeanimated');
-					welcomeText = "<span>/* Welcome to the CodeCell Terminal." + breakLine() + "Try <strong>help()</strong> to find out what you can do with the Terminal. Have fun! */</span>" + breakLine() + breakLine();
+					welcomeText = "<span>/* Welcome to the Vinit's Terminal." + breakLine() + "Try <strong>help()</strong> to find out what you can do with the Terminal. Have fun! */</span>" + breakLine() + breakLine();
 					//$("#onlineTerminal").html(welcomeText);
 					$("#onlineTerminal").writeText(welcomeText);
 					//setEndOfContenteditable(document.getElementById("onlineTerminal"));
