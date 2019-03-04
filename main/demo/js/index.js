@@ -45,12 +45,17 @@ class StickyNavigation {
 		let self = this;
 		$('.et-hero-tab').each(function() {
 			let id = $(this).attr('href');
+			if(id.length) 
+			{
 			let offsetTop = $(id).offset().top - self.tabContainerHeight;
 			let offsetBottom = $(id).offset().top + $(id).height() - self.tabContainerHeight;
+		
 			if($(window).scrollTop() > offsetTop && $(window).scrollTop() < offsetBottom) {
 				newCurrentId = id;
 				newCurrentTab = $(this);
 			}
+		}
+		id="";
 		});
 		if(this.currentId != newCurrentId || this.currentId === null) {
 			this.currentId = newCurrentId;

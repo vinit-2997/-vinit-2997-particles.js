@@ -2,6 +2,7 @@
    HTML5 CSS Reset Minified - Eric Meyer
    ========================================================================== */
 @import "https://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500);
 
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
 body{line-height:1}
@@ -35,10 +36,10 @@ html{
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-body{
+/*body{
   font:normal 75% Arial, Helvetica, sans-serif;
 }
-
+*/
 canvas{
   display:block;
   vertical-align:bottom;
@@ -117,7 +118,7 @@ canvas{
     top: 20px;
     left: auto;
     margin-left: -50px;
-    background-image: url('D:/Google Drive/Github/vinit/main/images/backterminalhandle2.png');
+    background-image: url('../images/backterminalhandle2.png');
 
 
     background-size: 100px 40px;
@@ -289,15 +290,61 @@ text-align: center;
   height: 100%;
 /*  background-color: #b61924;*/
   background-color: #000000;
-  background-image: url('D:/Google Drive/Github/vinit/main/images/city_background.jpg');
 /*
+
   filter: blur(8px);
   -webkit-filter: blur(8px);*/
+  background-image: url('../images/city_background.jpg');
 
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
+
+
+/*#tab-CONTACT{
+  background-image: url('D:/Google Drive/Github/vinit/main/images/contact_us.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}*/
+
+
+
+
+
+
+/*.intro{
+  height:100%
+}*/
+
+/*html{
+  height:100%
+}
+body{
+  height:100%;
+}
+.left{
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  background-color:#3d231b;
+  height : 100%;
+  color : #FFF;
+
+}
+.right{
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  background-color:#FFF;
+  height : 100%;
+  color : #3d231b;
+}
+
+*/
+
+
 
 
 /*#particles-js {
@@ -350,8 +397,7 @@ body:before {
   margin: 150px auto;
   width: 300px;
   background: #ff0000 ;
-  border: 5px solid white;
-
+  border: 10px solid white;
    position: absolute;
    top: 10px;
 /*   left: 500px;
@@ -369,8 +415,8 @@ body:before {
   bottom: 0;
   left: 50%;
   content: '';
-  height: 170px;
-  width: 170px;
+  height: 1700px;
+  width: 1700px;
   background: white;
   border-radius: 50%;
   z-index: -1;
@@ -381,7 +427,7 @@ header img {
   height: 150px;
   width: 150px;
   margin-top: -50px;
-  border-radius: 50%;
+  border-radius: 10%;
   border: 5px solid #c0392b;
 }
 
@@ -397,7 +443,8 @@ h1 {
 }
 
 h2 {
-  font-family: sans-serif;
+  /*font-family: sans-serif;*/
+  font-family: "Kaushan Script",cursive;
   font-size: 16px;
   padding-bottom: 10px;
   color: #FF6347;
@@ -416,12 +463,14 @@ h2 {
   -ms-transition: .3s all ease-in-out;
 }
 
-.profile-card:hover .profile-bio, .profile-card p{
+.profile-card:hover .profile-bio, .profile-card p
+{
   height: 120px;
   display: visible;
 }
 
-.profile-card p {
+.profile-card p 
+{
   margin: 0 0 20px 0;
   padding: 20px 20px 40px 20px;
   color: white;
@@ -430,17 +479,34 @@ h2 {
 }
 
 .profile-social-links {
-  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, .7);  
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, .7);  
 /*  background: url('https://subtlepatterns.com/patterns/perforated_white_leather.png');
-*/  background: url('D:/Google Drive/Github/vinit/main/images/perforated_white_leather.png');
+*/ 
+ background: url('../images/perforated_white_leather.png');
 /*background: url(./images/perforated_white_leather.png);
 */
+  background-size: 100%;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+}
+
+.social-links {
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, .7);  
   background-size: 50%;
   background-color: white;
   margin: 0;
   padding: 0;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
 
 }
 
@@ -454,9 +520,9 @@ ul li {
 }
 
 ul img {
-  height: 35px;
-  width: 35px;
-  padding: 20px 25px;
+  height: 50px;
+  width: 50px;
+  padding: 10px 10px;
   filter: drop-shadow(5px 5px 5px grey);
   -webkit-filter: drop-shadow(5px 5px 5px grey);
 }
@@ -469,8 +535,8 @@ ul img:hover {
 
 
 .fa {
-  padding: 20px;
-  font-size: 30px;
+/*  padding: 20px;
+*/  font-size: 30px;
   width: 30px;
   text-align: center;
   text-decoration: none;
@@ -483,6 +549,7 @@ ul img:hover {
 }
 
 .fa-facebook {
+  border-radius: 100%;
   background: #3B5998;
   color: white;
 }
@@ -604,9 +671,9 @@ canvas {
 */
 
 
-body {
+/*body {
   font-family: "Century Gothic", 'Lato', sans-serif;
-}
+}*/
 
 a {
   text-decoration: none;
@@ -614,15 +681,15 @@ a {
 
 .et-hero-tabs,
 .et-slide {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative;
-  background: #fff;
-  text-align: center;
-/*  padding: 0 2em;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: #0000ff;
+    text-align: center;
+    /* padding: 0 2em; */
 */}
 .et-hero-tabs h1,
 .et-slide h1 {
@@ -646,7 +713,7 @@ a {
   height: 70px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background: #000000;
-  z-index: 10;
+  z-index: 1000;
 }
 .et-hero-tabs-container--top {
   position: fixed;
@@ -689,7 +756,7 @@ a {
   }
 
   .et-hero-tab {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 
@@ -735,7 +802,7 @@ a {
   position: relative;
   height: 0;
   padding-bottom: calc(100% - 16px);
-  margin-bottom: 6.6em;
+  margin-bottom: 9.6em;
 }
 .material-card h2 {
   position: absolute;
@@ -1957,3 +2024,675 @@ h3 {
   font-weight: 200;
 }
 */
+
+
+
+
+
+
+/* tabs css*/
+
+/* Style the tab buttons */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px;
+  text-align: center;
+  height: 1000px;
+}
+
+/* Style each tab content individually */ 
+#London {background-color:red;}
+#Paris {background-color:green;}
+#Tokyo {background-color:blue;}
+#Oslo {background-color:orange;}
+
+
+
+/*html{
+  height:100%
+}
+body{
+  height:100%;
+}*/
+/*.intro{
+  height:100%
+}*/
+.split 
+{
+    overflow-x: hidden;
+}
+
+
+
+.left{
+  background-image: url('../images/contact_us.jpg');
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color:#FFF;
+  height : 100vh;
+  color : #FFF;
+
+}
+.right{
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  background-color:#ff045a;
+  height : 100vh;
+  color : #3d231b;
+}
+
+.color_11 {
+    color: #ffffff;
+  font-weight:bold;
+}
+
+.color_12 {
+    color: #ffffff;
+
+}
+
+
+
+.style-jozy71qw1submit:hover {
+    cursor: pointer;
+}
+.style-jozy71qw1submit {
+    color: #FFFFFF;
+    font: normal normal normal 15px/1.875em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif;
+}
+@media (max-width: 1200px) { 
+  .left{
+    height:50%
+  }
+  .right{
+    height:50%
+  }
+}
+
+
+
+
+/*adding bar graph*/
+
+.igFrameBar 
+{
+  width: 400px;
+  height: 300px;
+  position: relative;
+  background: #f2f2f2;
+  margin: 15% auto 0px auto;
+  transform: translate(0, -50%);
+}
+
+.igFrameBar:before 
+{
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+}
+
+.igFrameBar:after 
+{
+  content: "";
+  width: 100%;
+  height: 50%;
+  background: transparent;
+  position: absolute;
+  top: 25%;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.igData 
+{
+  width: 30px;
+  position: absolute;
+  bottom: 1px;
+  margin: 0px 0px 0px 0px;
+  z-index: 99;
+  float: left;
+}
+
+.igData1 
+{
+  background: #9baec8;
+  height: 0px;
+  left: 26.3636363636px;
+  -webkit-animation: showBar1 1.2s 0.1s forwards;
+  -moz-animation: showBar1 1.2s 0.1s forwards;
+  animation: showBar1 1.2s 0.1s forwards;
+}
+
+.igData2 
+{
+  background: #d9e1e8;
+  height: 0px;
+  left: 62.7272727273px;
+  -webkit-animation: showBar2 1.2s 0.2s forwards;
+  -moz-animation: showBar2 1.2s 0.2s forwards;
+  animation: showBar2 1.2s 0.2s forwards;
+}
+
+.igData3 
+{
+  background: #2b90d9;
+  height: 0px;
+  left: 99.0909090909px;
+  -webkit-animation: showBar3 1.2s 0.3s forwards;
+  -moz-animation: showBar3 1.2s 0.3s forwards;
+  animation: showBar3 1.2s 0.3s forwards;
+}
+
+.igData4 
+{
+  background: #8ec0e4;
+  height: 0px;
+  left: 135.4545454545px;
+  -webkit-animation: showBar4 1.2s 0.4s forwards;
+  -moz-animation: showBar4 1.2s 0.4s forwards;
+  animation: showBar4 1.2s 0.4s forwards;
+}
+
+.igData5 
+{
+  background: #cadbe9;
+  height: 0px;
+  left: 171.8181818182px;
+  -webkit-animation: showBar5 1.2s 0.5s forwards;
+  -moz-animation: showBar5 1.2s 0.5s forwards;
+  animation: showBar5 1.2s 0.5s forwards;
+}
+
+.igData6 
+{
+  background: #6aafe6;
+  height: 0px;
+  left: 208.1818181818px;
+  -webkit-animation: showBar6 1.2s 0.6s forwards;
+  -moz-animation: showBar6 1.2s 0.6s forwards;
+  animation: showBar6 1.2s 0.6s forwards;
+}
+
+.igData7 
+{
+  background: #d6ecfa;
+  height: 0px;
+  left: 244.5454545455px;
+  -webkit-animation: showBar7 1.2s 0.7s forwards;
+  -moz-animation: showBar7 1.2s 0.7s forwards;
+  animation: showBar7 1.2s 0.7s forwards;
+}
+
+.igData8 
+{
+  background: #a5dff9;
+  height: 0px;
+  left: 280.9090909091px;
+  -webkit-animation: showBar8 1.2s 0.8s forwards;
+  -moz-animation: showBar8 1.2s 0.8s forwards;
+  animation: showBar8 1.2s 0.8s forwards;
+}
+
+.igData9 
+{
+  background: #dae9f4;
+  height: 0px;
+  left: 317.2727272727px;
+  -webkit-animation: showBar9 1.2s 0.9s forwards;
+  -moz-animation: showBar9 1.2s 0.9s forwards;
+  animation: showBar9 1.2s 0.9s forwards;
+}
+
+.igData10 
+{
+  background: #d3e0f7;
+  height: 0px;
+  left: 353.6363636364px;
+  -webkit-animation: showBar10 1.2s 1s forwards;
+  -moz-animation: showBar10 1.2s 1s forwards;
+  animation: showBar10 1.2s 1s forwards;
+}
+
+.igData:before 
+{
+  position: absolute;
+  top: -16px;
+  font-size: 12px;
+  color: #333;
+  font-family: "roboto";
+  font-weight: 300;
+}
+
+.igData1:before {
+  content: "50%";
+}
+
+.igData2:before {
+  content: "40%";
+}
+
+.igData3:before {
+  content: "70%";
+}
+
+.igData4:before {
+  content: "22%";
+}
+
+.igData5:before {
+  content: "35%";
+}
+
+.igData6:before {
+  content: "40%";
+}
+
+.igData7:before {
+  content: "85%";
+}
+
+.igData8:before {
+  content: "36%";
+}
+
+.igData9:before {
+  content: "88%";
+}
+
+.igData10:before {
+  content: "62%";
+}
+
+.igData:after {
+  position: absolute;
+  bottom: -55px;
+  transform: rotate(30deg);
+  color: #666;
+  font-size: 14px;
+  text-align: left;
+  font-family: "roboto";
+  font-weight: 300;
+  width: 150px;
+}
+
+.igData1:after {
+  content: "Java";
+}
+
+.igData2:after {
+  content: "CSS";
+}
+
+.igData3:after {
+  content: "Mark";
+}
+
+.igData4:after {
+  content: "Jade";
+}
+
+.igData5:after {
+  content: "Ray";
+}
+
+.igData6:after {
+  content: "Oliver";
+}
+
+.igData7:after {
+  content: "Barry";
+}
+
+.igData8:after {
+  content: "Felicity";
+}
+
+.igData9:after {
+  content: "Malcom";
+}
+
+.igData10:after {
+  content: "Ted";
+}
+
+@-webkit-keyframes showBar1 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 50%;
+  }
+}
+@-webkit-keyframes showBar2 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 40%;
+  }
+}
+@-webkit-keyframes showBar3 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 70%;
+  }
+}
+@-webkit-keyframes showBar4 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 22%;
+  }
+}
+@-webkit-keyframes showBar5 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 35%;
+  }
+}
+@-webkit-keyframes showBar6 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 40%;
+  }
+}
+@-webkit-keyframes showBar7 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 85%;
+  }
+}
+@-webkit-keyframes showBar8 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 36%;
+  }
+}
+@-webkit-keyframes showBar9 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 88%;
+  }
+}
+@-webkit-keyframes showBar10 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 62%;
+  }
+}
+@-moz-keyframes showBar1 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 50%;
+  }
+}
+@-moz-keyframes showBar2 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 40%;
+  }
+}
+@-moz-keyframes showBar3 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 70%;
+  }
+}
+@-moz-keyframes showBar4 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 22%;
+  }
+}
+@-moz-keyframes showBar5 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 35%;
+  }
+}
+@-moz-keyframes showBar6 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 40%;
+  }
+}
+@-moz-keyframes showBar7 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 85%;
+  }
+}
+@-moz-keyframes showBar8 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 36%;
+  }
+}
+@-moz-keyframes showBar9 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 88%;
+  }
+}
+@-moz-keyframes showBar10 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 62%;
+  }
+}
+@keyframes showBar1 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 50%;
+  }
+}
+@keyframes showBar2 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 40%;
+  }
+}
+@keyframes showBar3 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 70%;
+  }
+}
+@keyframes showBar4 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 22%;
+  }
+}
+@keyframes showBar5 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 35%;
+  }
+}
+@keyframes showBar6 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 40%;
+  }
+}
+@keyframes showBar7 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 85%;
+  }
+}
+@keyframes showBar8 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 36%;
+  }
+}
+@keyframes showBar9 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 88%;
+  }
+}
+@keyframes showBar10 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 62%;
+  }
+}
+
+
+
+
+
+
+
+/*Single page scroll css*/
+
+/* Color Theme is Sunset Over a Swamp from
+*  https://visme.co/blog/color-combinations/
+*/
+/*
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}*/
+/*
+body::-webkit-scrollbar {
+  width: 0 !important;
+}*/
+/*
+#sectionnumber {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  position: fixed;
+  right: 30px;
+  top: 10px;
+  color: white;
+  background-color: black;
+  border-radius: 25px;
+  z-index: 1;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: -1;
+}
+
+.section h1 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+}
+
+.section:nth-child(n) {
+  background-color: #6465A5;
+}
+
+.section:nth-child(2n) {
+  background-color: #6975A6;
+}
+
+.section:nth-child(3n) {
+  background-color: #F3E96B;
+}
+
+.section:nth-child(4n) {
+  background-color: #F28A30;
+}
+
+.section:nth-child(5n) {
+  background-color: #F05837;
+}*/
