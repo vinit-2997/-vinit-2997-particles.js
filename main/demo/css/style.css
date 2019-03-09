@@ -3,8 +3,9 @@
    ========================================================================== */
 @import "https://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700";
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500);
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
 
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
 body{line-height:1}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 nav ul{list-style:none}
@@ -50,8 +51,17 @@ canvas{
 
 
 
+/*
+#resume
+{
+  display:inline;
+}
+*/
 
-
+#resume-figure
+{
+  display:flex;
+}
 
 
 
@@ -370,7 +380,6 @@ body{
 
 
 
-@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
 
 body {
   text-align: center;
@@ -687,8 +696,9 @@ a {
     align-items: center;
     height: 100vh;
     position: relative;
-    background: #0000ff;
+    background: #000000;
     text-align: center;
+
     /* padding: 0 2em; */
 */}
 .et-hero-tabs h1,
@@ -729,6 +739,8 @@ a {
   letter-spacing: 0.1rem;
   transition: all 0.5s ease;
   font-size: 0.8rem;
+  font-family: "Kaushan Script",cursive;
+
 }
 .et-hero-tab:hover {
   color: white;
@@ -815,6 +827,8 @@ a {
   line-height: 1.6em;
   margin: 0;
   z-index: 10;
+    font-family: "roboto";
+
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -2696,3 +2710,445 @@ body::-webkit-scrollbar {
 .section:nth-child(5n) {
   background-color: #F05837;
 }*/
+
+
+/*resume skills
+*/
+/*
+
+.section-label--left,
+.section-label--right {
+  @include black-container;
+  position: absolute;
+  top: -1px;
+}
+.section-label--left {
+  left: 0px;
+}
+.section-label--right {
+  right: 0px;
+}
+
+
+.resume {
+  background: url('../images/border_bg.jpg') #fff repeat-x top left;
+  border-top: 30px solid #fff;
+  margin: 0;
+  h1 {
+    background-color: #fff;
+    margin: -10px auto 0 auto;
+    width: 250px;
+    z-index: 5;
+    line-height: 1.3em;
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal;
+    font-family: "Archer-Book", Georgia, Serif;
+    @media (max-width: $max-width-sm) {
+      font-size: 18px;
+      margin: -8px auto 0 auto;
+      width: 220px;
+    }
+  }
+  .resume-summary {
+    @include clearfix;
+    text-align: justify;
+    margin: 30px auto;
+    padding: 0 15px;
+    display: block;
+    font-weight: normal;
+    line-height: 1.5em;
+    @media (max-width: $max-width-xs) {
+      padding: 0px;
+    }
+  }
+  .resume-block {
+    @include clearfix;
+    position: relative;
+    border-top: 1px dotted $grey;
+    margin: 10px 0 20px 0;
+    padding-top: 35px;
+    @media (max-width: $max-width-xs) {
+      padding-top: 20px;
+      margin: 5px 0 10px 0;
+    }
+    .resume-education--desktop,
+    .resume-jobs--desktop {
+      display: block;
+      margin-top: 30px;
+      @media (max-width: $max-width-xs) {
+        display: none;
+      }
+    }
+    .resume-education--mobile,
+    .resume-jobs--mobile {
+      display: none;
+      @media (max-width: $max-width-xs) {
+        display: block;
+        margin: 30px 0;
+      }
+    }*/
+  /*  .resume-skills {
+      float: left;
+      text-align: left;
+      ul {
+        padding: 0px;
+        margin: 20px 0 0 0;
+        li {
+          list-style-type: none;
+          text-align: right;
+          height: 37px;
+          margin: 0 10px 0 0;
+          padding-right: 10px;
+          font-style: italic;
+          font-family: Georgia;
+          font-weight: bold;
+          font-size: 11px;
+          background: url('../images/dash.jpg') no-repeat 100% 50%;
+          @media (max-width: $max-width-sm) {
+            font-size: 10px;
+          }
+        }
+      }
+    }*/
+/*
+      .resume-skills 
+      {
+      float: left;
+      text-align: left;
+      }
+
+
+        .resume-skills ul 
+        {
+        padding: 0px;
+        margin: 20px 0 0 0; 
+        }
+
+
+         .resume-skills li 
+        {
+         list-style-type: none;
+          text-align: right;
+          height: 37px;
+          margin: 0 10px 0 0;
+          padding-right: 10px;
+          font-style: italic;
+          font-family: Georgia;
+          font-weight: bold;
+          font-size: 11px;
+          background: url('../images/dash.jpg') no-repeat 100% 50%;
+          @media (max-width: $max-width-sm) {
+            font-size: 10px;
+          } 
+        }
+
+
+
+    .resume-jobs-window {
+      background-color: #FFFFFF;
+      position: relative;
+      z-index: 0;
+      .resume-jobs-wrapper {
+        overflow: hidden;
+        position: relative;
+        max-width: 1040px;
+        height: 470px;
+        .next_container {
+          z-index: 200;
+          width: 100px;
+          height: 480px;
+          background-color: rgba(255, 255, 255, 0.8);
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          .next {
+            z-index: 400;
+            padding: 228px 20px 0 0px;
+            float: right;
+            i {
+              cursor: pointer;
+              font-size: 40px;
+            }
+          }
+        }
+        .prev_container {
+          @extend .next_container;
+          background-color: rgba(255, 255, 255, 0.8);
+          display: none;
+          left: 0px;
+          .previous {
+            @extend .next;
+            padding: 228px 0px 0 20px;
+            float: left;
+          }
+        }
+        .resume-jobs-container {
+          left: 0;
+          position: absolute;
+          top: 0;
+          z-index: 100;
+          .resume-jobs-slide {
+            width: 1200px;
+            .table-row {
+              width: auto;
+              .table-header, .table-data { width: 16%; }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+figure {
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: flex-start;
+}
+@media (max-width: 767px) {
+  figure {
+    flex-direction: column;
+  }
+}
+figure p {
+  position: absolute;
+  top: 75px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  font-family: "Archer-Book", Georgia, Serif;
+  color: #000;
+  font-size: 10px;
+  z-index: 100;
+  padding: 0px;
+  margin: 0px;
+}
+figure .bar {
+  display: table-cell;
+  vertical-align: top;
+  padding: 0px;
+  font-style: italic;
+  font-size: 11px;
+  text-align: center;
+  z-index: 300;
+}
+figure .bar .graph-header {
+  position: absolute;
+  top: 73px;
+  height: 18px;
+  left: 0px;
+  right: 0px;
+}
+figure > div {
+  margin-top: 25px;
+  font-size: 12px;
+  position: relative;
+}
+@media (max-width: 767px) {
+  figure > div {
+    height: auto;
+    width: 100%;
+  }
+}
+figure > div.frontend .bar {
+  width: 14%;
+}
+figure > div.frontend .bar .graph-header {
+  background-color: #f77c7f;
+}
+figure > div.frontend .bar .graph-header.dark {
+  border-right: 15px solid #ff3f18;
+}
+figure > div.programming .bar {
+  width: 25%;
+}
+figure > div.programming .bar .graph-header {
+  background-color: #fd835e;
+}
+figure > div.programming .bar .graph-header.dark {
+  border-right: 15px solid #ffb317;
+}
+figure > div.design .bar {
+  width: 25%;
+}
+figure > div.design .bar .graph-header {
+  background-color: #ffdd4d;
+}
+figure > div.design .bar .graph-header.dark {
+  border-right: 15px solid #c1e31a;
+}
+figure > div.additional .bar {
+  width: 50%;
+}
+figure > div.additional .bar .graph-header {
+  background-color: #26c6d6;
+}
+figure > div.additional .bar .graph-header.dark {
+  border-right: 15px solid #4fabec;
+}
+figure > div .beginner {
+  height: 98px;
+  width: 8px;
+  margin: 0 auto;
+  border: 0px;
+  text-align: center;
+  position: relative;
+  background: url('../images/graph_sprite.png') -75px 0px no-repeat;
+}
+figure > div .beginner.alt {
+  height: 115px;
+}
+figure > div .beginner.alt div {
+  position: absolute;
+  bottom: 0px;
+  left: 3px;
+}
+figure > div .intermediate {
+  height: 98px;
+  width: 8px;
+  margin: 0 auto;
+  border: 0px;
+  text-align: center;
+  position: relative;
+  background: url('../images/graph_sprite.png') -50px 0px no-repeat;
+}
+figure > div .intermediate.alt {
+  height: 115px;
+}
+figure > div .intermediate.alt div {
+  position: absolute;
+  bottom: 0px;
+  left: 3px;
+}
+figure > div .advanced {
+  height: 98px;
+  width: 8px;
+  margin: 0 auto;
+  border: 0px;
+  text-align: center;
+  position: relative;
+  background: url('../images/graph_sprite.png') -25px 0px no-repeat;
+}
+figure > div .advanced.alt {
+  height: 115px;
+}
+figure > div .advanced.alt div {
+  position: absolute;
+  bottom: 0px;
+  left: 3px;
+}
+figure > div .expert {
+  height: 98px;
+  width: 8px;
+  margin: 0 auto;
+  border: 0px;
+  text-align: center;
+  position: relative;
+  background: url('../images/graph_sprite.png') 0px 0px no-repeat;
+}
+figure > div .expert.alt {
+  height: 115px;
+}
+figure > div .expert.alt div {
+  position: absolute;
+  bottom: 0px;
+  left: 3px;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: stretch;
+  width: 100%;
+}
+.social .social-item {
+  margin-top: 10px;
+  flex-grow: 0;
+  padding: 5px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 100%;
+  font-size: 18px;
+  line-height: 25px;
+  width: 25px;
+  margin: 10px;
+}
+.social .social-item:hover {
+  transition: 0.4s;
+  background-color: #f9d0d0;
+}
+
+
+*/
+
+
+
+
+/*bootstrap grid for division in about
+*/
+section.grid {
+  padding: 30px 0  0;
+}
+section.grid h1 {
+  margin-bottom: 50px;
+}
+section.grid p {
+  margin-bottom: 24px;
+}
+
+div.sample-row div.inner {
+  background: #EF5858;
+  border: 1px solid #eb3333;
+  color: white;
+  padding: 15px;
+}
+div.sample-row div.inner.logo {
+  padding: 50px 0;
+  min-height: 123px;
+}
+div.sample-row div.inner div.inner {
+  background: #eb3333;
+  border: 1px solid #e91b1b;
+}
+@media (min-width: 768px) {
+  div.sample-row div.inner {
+    background: #10a7a7;
+    border: 1px solid #14cccc;
+  }
+  div.sample-row div.inner div.inner {
+    background: #14cccc;
+    border: 1px solid #12b5b5;
+  }
+}
+@media (min-width: 992px) {
+  div.sample-row div.inner {
+    background: #ef8a58;
+    border: 1px solid #eb7033;
+  }
+  div.sample-row div.inner div.inner {
+    background: #eb7033;
+    border: 1px solid #e9601b;
+  }
+}
+@media (min-width: 1340px) {
+  div.sample-row div.inner {
+    background: #a73e3e;
+    border: 1px solid #a52424;
+  }
+  div.sample-row div.inner div.inner {
+    background: #a52424;
+    border: 1px solid #901f1f;
+  }
+}

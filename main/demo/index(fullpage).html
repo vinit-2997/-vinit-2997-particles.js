@@ -3,105 +3,106 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>fullPage.js - Base example</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Vinit Todai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./css/app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./css/font-awesome-animation.min.css">
+<!--   <link rel="stylesheet" href="./css/app.css"> -->
   <link rel="manifest" href="../manifest.json"/>
-  <link rel='stylesheet' href='css/fullpage.css'>
-
-      <link rel="stylesheet" href="css/style.css">
-
-  
+  <link rel='stylesheet' href='./css/fullpage.css'>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
+  <div class="et-hero-tabs-container">
+    <a class="et-hero-tab" href="#tab-MAIN">HOME</a>
+    <a class="et-hero-tab" href="#tab-ABOUT">ABOUT</a>
+    <a class="et-hero-tab" href="#tab-PROJECTS">PROJECTS</a>
+    <a class="et-hero-tab" href="#tab-CONTACT">CONTACT</a>
+    <a class="et-hero-tab" href="#tab-TERMINAL">TERMINAL</a>
+    <span class="et-hero-tab-slider"></span>
+  </div>
 
-   <div class="et-hero-tabs-container">
-  <a class="et-hero-tab" href="#tab-MAIN">HOME</a>
-  <a class="et-hero-tab" href="#tab-ABOUT">ABOUT</a>
-  <a class="et-hero-tab" href="#tab-PROJECTS">PROJECTS</a>
-  <a class="et-hero-tab" href="#tab-CONTACT">CONTACT</a>
-  <a class="et-hero-tab" href="#tab-TERMINAL">TERMINAL</a>
-  <span class="et-hero-tab-slider"></span>
-</div>
-
-<div id="contTerminal" class="closedTerminal terminalsizeanimated" style="overflow:visible !important">
-  <div id="onlineTerminal" contenteditable spellcheck="false"></div>
-  <a onclick="launchJSTerminal();" class="terminalHandle"></a>
-</div>
+  <div id="contTerminal" class="closedTerminal terminalsizeanimated faa-parent faa-bounce animated" style="overflow:visible !important">
+    <div id="onlineTerminal" contenteditable spellcheck="false"></div>
+    <a onclick="launchJSTerminal();" class="terminalHandle"></a>
+  </div>
 
 
   <div id="fullpage">
     <div class="section" id ="tab-MAIN">
 
-<section class="et-hero-tabs">
-    <div id="particles-js">
+        <section class="et-hero-tabs">
+            <div id="particles-js">
 
-      <aside class="profile-card">
-        <header>
-          <a href="https://tutsplus.com">
-<!--             <img src="https://github.githubassets.com/images/modules/open_graph/github-octocat.png">
- -->            <img src="./images/icons/logo.PNG">
-          </a>
+              <aside class="profile-card">
+                <header>
+                  <a href="https://tutsplus.com"><img src="./images/icons/logo.PNG"></a>
+                  <h1>Vinit Todai</h1>
+                  <h2>Young Engineer !</h2>
+                </header>
 
-          <h1>Vinit Todai</h1>
+                <div class="profile-bio">
+                  <p>
+                    ••.•´¯`•.•• V҉T҉ ••.•´¯`•.••
+                    Engineer by profession, Writer by chance
+                  Maker and Startup Enthusiast</p>
+                </div>
 
-          <h2>Young Engineer !</h2>
-        </header>
 
-        <div class="profile-bio">
+                <div class="profile-social-links">
+                  <ul>              
+                      <li>
+                        <a href="https://www.facebook.com/vinit.todai">
+                          <img src="./images/icons/facebook.jpg">
+                        </a>
+                      </li>
 
-          <p>
-            ••.•´¯`•.•• V҉T҉ ••.•´¯`•.••
-            Engineer by profession, Writer by chance
-          Maker and Startup Enthusiast</p>
+                       <li>
+                        <a href="https://www.linkedin.com/in/vinit-todai">
+                          <img src="./images/icons/LinkedIn.png">
+                        </a>
+                       </li>
 
+                      <li>
+                        <a href="https://github.com/vinit-2997">
+                          <img src="./images/icons/git.svg">
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="https://medium.com/@vinit.todai">
+                          <img src="./images/icons/medium.svg">
+                        </a>
+                      </li>
+
+                       <li>
+                        <a href="https://github.com/vinit-2997">
+                          <img src="./images/icons/git.svg">
+                        </a>
+                      </li> 
+
+                  </ul>
+
+              </div>
+        <br>
+                        <a href="https://medium.com/@vinit.todai">
+                          <i class="fa fa-angle-double-down faa-parent faa-bounce animated" style="color:white"></i>
+                        </a>
+              
+        </aside>
         </div>
 
-        <div class="profile-social-links">
-          <ul>
 
-              <li>
-                <a href="https://www.facebook.com/vinit.todai">
-                  <img src="./images/icons/facebook.jpg">
-                </a>
-              </li>
-
-               <li>
-                <a href="https://www.linkedin.com/in/vinit-todai">
-                  <img src="./images/icons/LinkedIn.png">
-                </a>
-              </li>
-
-              <li>
-                <a href="https://github.com/vinit-2997">
-                  <img src="./images/icons/git.svg">
-                </a>
-              </li>
-
-              <li>
-                <a href="https://medium.com/@vinit.todai">
-                  <img src="./images/icons/medium.svg">
-                </a>
-              </li>
-
-               <li>
-                <a href="https://github.com/vinit-2997">
-                  <img src="./images/icons/git.svg">
-                </a>
-              </li> 
-
-          </ul>
-
-      </div>
-
-</aside>
-</div>
-</section>
+        </section>
 
     </div>
+
+
+
 
 
     <div class="section" id="tab-ABOUT">
@@ -109,31 +110,223 @@
 
 
 
-<section class="et-slide" id="tab-ABOUT">
-  <br>
-  <br>
-  <br>
-  <br>
-    <h1>ABOUT</h1>
-    <h3>something about ABOUT</h3>
+            <section class="et-slide" id="tab-ABOUT">
+              <br><br><br><br>
+
+                  
 
 
-
-  <div class="igFrameBar">
-  <div class="igData igData1"></div>
-  <div class="igData igData2"></div>
-  <div class="igData igData3"></div>
-  <div class="igData igData4"></div>
-  <div class="igData igData5"></div>
-  <div class="igData igData6"></div>
-  <div class="igData igData7"></div>
-  <div class="igData igData8"></div>
-  <div class="igData igData9"></div>
-  <div class="igData igData10"></div>
-</div>
-
+                  <section class="grid default-grid">
+  <div class="container">
     
-  </section>
+    <div class="row sample-row">
+      <div class="col-xs-6 col-sm-4 gutter-margin-xs-md"><div class="inner">
+        
+                          <img src="./images/icons/git.svg" width="128" height="128">
+      </div></div>
+
+
+
+      <div class="col-xs-6 col-sm-8 gutter-margin-xs-md"><div class="inner">
+AirTrain JFK is an 8.1-mile-long (13 km) elevated people mover system and rail link serving John F. Kennedy International Airport in New York City. Its three lines and ten stations, operated by the Canadian firm Bombardier Transportation, connect the airport's six terminals with the New York City Subway in Howard Beach, Queens, and with the Long Island Rail Road and subway in Jamaica, Queens. In-depth planning for a dedicated transport system at JFK began in 1990, and construction commenced in 1998. The system opened in December 2003 after multiple delays. Since then, several improvements have been proposed for AirTrain JFK, including an extension to Manhattan. The system was originally projected to carry 4 million annual paying passengers and 8.4 million annual inter-terminal passengers, but the AirTrain has consistently exceeded these projections; in 2017, it had approximately 7.66 million paying passengers and 12.6 million inter-terminal passengers. (Full article...)
+
+      </div></div>
+    </div>
+  </div>
+</section>
+
+                  <div class="resume-block">
+                    <div class="section-label--right">skills</div>
+                    <div class="resume-skills--desktop">
+                      <div class="resume-skills">
+                        <ul>
+                          <li>expert</li>
+                          <li>advanced</li>
+                          <li>intermediate</li>
+                          <li>beginner</li>
+                        </ul>
+                      </div>
+                      <figure id="resume-figure">
+
+                          <div class="programming">
+                          <p>
+                            Software
+                          </p>
+
+
+                          <div class="bar">
+                            <div class="advanced"></div>
+                            <div class="graph-header"></div>
+                            <label>Java</label>
+                          </div>
+
+                           <div class="bar">
+                            <div class="advanced"></div>
+                            <div class="graph-header"></div>
+                            <label>C++</label>
+                          </div>
+
+                          <div class="bar">
+                            <div class="advanced"></div>
+                            <div class="graph-header"></div>
+                            <label>Android</label>
+                          </div>
+
+                          <div class="bar">
+                            <div class="advanced"></div>
+                            <div class="graph-header"></div>
+                            <label>MatLab</label>
+                          </div>
+
+
+                          <div class="bar">
+                            <div class="advanced"></div>
+                            <div class="graph-header"></div>
+                            <label>R</label>
+                          </div>
+
+                          <div class="bar">
+                            <div class="advanced"></div>
+                            <div class="graph-header"></div>
+                            <label>PROLOG</label>
+                          </div>
+
+                           <div class="bar">
+                            <div class="advanced"></div>
+                            <div class="graph-header"></div>
+                            <label>AutoCAD</label>
+                          </div>
+
+                           <div class="bar">
+                            <div class="advanced"></div>
+                            <div class="graph-header"></div>
+                            <label>Solidworks</label>
+                          </div>
+
+                          <div class="bar">
+                            <div class="intermediate"></div>
+                            <div class="graph-header"></div>
+                            <label>MySQL</label>
+                          </div>
+
+                          <div class="bar">
+                            <div class="beginner"></div>
+                            <div class="graph-header"></div>
+                            <label>Python</label>
+                          </div>
+
+                          <div class="bar">
+                            <div class="beginner"></div>
+                            <div class="graph-header dark"></div>
+                            <label>Ruby on Rails</label>
+                          </div>
+                        </div>
+
+                    <div class="design">
+                          <p>
+                            Hardware
+                          </p>
+                          <div class="bar">
+                            <div class="beginner"></div>
+                            <div class="graph-header"></div>
+                            <label>Raspberry pi</label>
+                          </div>
+
+                          <div class="bar">
+                            <div class="expert"></div>
+                            <div class="graph-header"></div>
+                            <label>Arduino</label>
+                          </div>
+
+                          <div class="bar">
+                            <div class="advanced"></div>
+                            <div class="graph-header dark"></div>
+                            <label>MSP430</label>
+                          </div>
+
+                          
+
+                        </div>
+
+
+                        <div class="frontend">
+                          <p>
+                            Front-end Technologies
+                          </p>
+
+                          <div class="bar">
+                            <div class="expert"></div>
+                            <div class="graph-header"></div>
+                            <label>CSS</label>
+                          </div>
+
+                          <div class="bar">
+                            <div class="intermediate"></div>
+                            <div class="graph-header"></div>
+                            <label>JavaScript</label>
+                          </div>
+
+                          <div class="bar">
+                            <div class="expert"></div>
+                            <div class="graph-header"></div>
+                            <label>HAML</label>
+                          </div>
+
+                          <div class="bar">
+                            <div class="expert"></div>
+                            <div class="graph-header"></div>
+                            <label>HTML</label>
+                          </div>
+
+                          <div class="bar">
+                            <div class="intermediate"></div>
+                            <div class="graph-header"></div>
+                            <label>CoffeeScript</label>
+                          </div>
+
+                          <div class="bar">
+                            <div class="expert"></div>
+                            <div class="graph-header dark"></div>
+                            <label>SASS</label>
+                          </div>
+                        </div>
+
+
+
+                      
+                      
+
+
+                        <div class="additional">
+                          <p>
+                            Platform
+                          </p>
+
+                          <div class="bar">
+                            <div class="expert"></div>
+                            <div class="graph-header"></div>
+                            <label>Linux</label>
+                          </div>
+
+                          <div class="bar">
+                            <div class="expert"></div>
+                            <div class="graph-header dark"></div>
+                            <label>Windows</label>
+                          </div>
+
+                            <div class="bar">
+                            <div class="expert"></div>
+                            <div class="graph-header"></div>
+                            <label>Android</label>
+                          </div>
+
+                        </div>
+
+
+                      </figure>
+                    </div>
+                  </div>
+            </section>
 
         </div>
 
@@ -142,1708 +335,1391 @@
 
 
     <div class="section" id="tab-PROJECTS">
-        <div class="slide" data-anchor="slide1">one 
+        <div class="slide" data-anchor="slide1"> 
 
-<section class="container">
+            <section>
 
-  <br>
-  <br>
-  <br>
-  <br>
+                <br><br><br><br><br><br><br>
 
-<button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">Software</button>
-<button class="tablink" onclick="openCity('Paris', this, 'green')">Hardware</button>
-<button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
-<button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
+                <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">Software</button>
+                <button class="tablink" onclick="openCity('Paris', this, 'green')">Hardware</button>
+                <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
+                <button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
 
- <div id="London" class="tabcontent">
+                <div id="London" class="tabcontent">
 
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Red">
-      <h2>
-        <span>Brain Controlled Wheelchair</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          The Deer Hunter
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-christopher-walken.jpg">
+                      <div class="col-md-3 col-sm-8 col-xs-12">
+                        <article class="material-card Red">
+                          <h2>
+
+                            <span>
+                               <i class="fa fa-fw fa-star"></i>
+                            Brain Controlled Wheelchair
+                          </span>
+
+                            <!-- <strong> -->
+                           <!--    <i class="fa fa-fw fa-star"></i>
+                              A Smart wheelchair that can be controlled with your Mind! -->
+                            <!-- </strong> -->
+                          </h2>
+
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-christopher-walken.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has appeared in more than 100 films and television shows, including The Deer Hunter, Annie Hall, The Prophecy trilogy, The Dogs of War ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                         <!--  <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div> -->
+                        </article>
+                      </div>
+
+                      <div class="col-md-3 col-sm-8 col-xs-12">
+                        <article class="material-card Pink">
+                          <h2>
+                            <span>Sean Penn</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Mystic River
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-sean-penn.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has won two Academy Awards, for his roles in the mystery drama Mystic River (2003) and the biopic Milk (2008). Penn began his acting career in television with a brief appearance in a 1974 episode of Little House on the Prairie ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-3 col-sm-8 col-xs-12">
+                        <article class="material-card Purple">
+                          <h2>
+                            <span>Clint Eastwood</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Million Dollar Baby
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-clint-eastwood.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He rose to international fame with his role as the Man with No Name in Sergio Leone's Dollars trilogy of spaghetti Westerns during the 1960s ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-3 col-sm-8 col-xs-12">
+                        <article class="material-card Deep-Purple">
+                          <h2>
+                            <span>Dustin Hoffman</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Kramer vs. Kramer
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-dustin-hoffman.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has been known for his versatile portrayals of antiheroes and vulnerable characters.[3] He won the Academy Award for Kramer vs. Kramer in 1979 ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                </div>
+
+
+
+                <div id="Paris" class="tabcontent">
+
+                     <div class="col-md-3 col-sm-2 col-xs-1">
+                        <article class="material-card Red">
+                          <h2>
+
+                            <span>
+                               <i class="fa fa-fw fa-star"></i>
+                            Brain Controlled Wheelchair
+                          </span>
+
+                            <!-- <strong> -->
+                           <!--    <i class="fa fa-fw fa-star"></i>
+                              A Smart wheelchair that can be controlled with your Mind! -->
+                            <!-- </strong> -->
+                          </h2>
+
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-christopher-walken.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has appeared in more than 100 films and television shows, including The Deer Hunter, Annie Hall, The Prophecy trilogy, The Dogs of War ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                         <!--  <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div> -->
+                        </article>
+                      </div>
+
+                      <div class="col-md-3 col-sm-8 col-xs-12">
+                        <article class="material-card Pink">
+                          <h2>
+                            <span>Sean Penn</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Mystic River
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-sean-penn.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has won two Academy Awards, for his roles in the mystery drama Mystic River (2003) and the biopic Milk (2008). Penn began his acting career in television with a brief appearance in a 1974 episode of Little House on the Prairie ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-3 col-sm-8 col-xs-12">
+                        <article class="material-card Purple">
+                          <h2>
+                            <span>Clint Eastwood</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Million Dollar Baby
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-clint-eastwood.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He rose to international fame with his role as the Man with No Name in Sergio Leone's Dollars trilogy of spaghetti Westerns during the 1960s ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-3 col-sm-8 col-xs-12">
+                        <article class="material-card Deep-Purple">
+                          <h2>
+                            <span>Dustin Hoffman</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Kramer vs. Kramer
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-dustin-hoffman.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has been known for his versatile portrayals of antiheroes and vulnerable characters.[3] He won the Academy Award for Kramer vs. Kramer in 1979 ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                </div>
+
+
+
+                <div id="Tokyo" class="tabcontent">
+
+                      <div class="col-md-3 col-sm-2 col-xs-1">
+                        <article class="material-card Red">
+                          <h2>
+
+                            <span>
+                               <i class="fa fa-fw fa-star"></i>
+                            Brain Controlled Wheelchair
+                          </span>
+
+                            <!-- <strong> -->
+                           <!--    <i class="fa fa-fw fa-star"></i>
+                              A Smart wheelchair that can be controlled with your Mind! -->
+                            <!-- </strong> -->
+                          </h2>
+
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-christopher-walken.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has appeared in more than 100 films and television shows, including The Deer Hunter, Annie Hall, The Prophecy trilogy, The Dogs of War ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                         <!--  <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div> -->
+                        </article>
+                      </div>
+
+                      <div class="col-md-3 col-sm-8 col-xs-12">
+                        <article class="material-card Pink">
+                          <h2>
+                            <span>Sean Penn</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Mystic River
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-sean-penn.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has won two Academy Awards, for his roles in the mystery drama Mystic River (2003) and the biopic Milk (2008). Penn began his acting career in television with a brief appearance in a 1974 episode of Little House on the Prairie ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-3 col-sm-8 col-xs-12">
+                        <article class="material-card Purple">
+                          <h2>
+                            <span>Clint Eastwood</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Million Dollar Baby
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-clint-eastwood.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He rose to international fame with his role as the Man with No Name in Sergio Leone's Dollars trilogy of spaghetti Westerns during the 1960s ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-3 col-sm-8 col-xs-12">
+                        <article class="material-card Deep-Purple">
+                          <h2>
+                            <span>Dustin Hoffman</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Kramer vs. Kramer
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-dustin-hoffman.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has been known for his versatile portrayals of antiheroes and vulnerable characters.[3] He won the Academy Award for Kramer vs. Kramer in 1979 ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                </div>
+
+
+
+
+                <div id="Oslo" class="tabcontent">
+
+                     <div class="col-md-3 col-sm-2 col-xs-1">
+                        <article class="material-card Red">
+                          <h2>
+
+                            <span>
+                               <i class="fa fa-fw fa-star"></i>
+                            Brain Controlled Wheelchair
+                          </span>
+
+                            <!-- <strong> -->
+                           <!--    <i class="fa fa-fw fa-star"></i>
+                              A Smart wheelchair that can be controlled with your Mind! -->
+                            <!-- </strong> -->
+                          </h2>
+
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-christopher-walken.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has appeared in more than 100 films and television shows, including The Deer Hunter, Annie Hall, The Prophecy trilogy, The Dogs of War ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                         <!--  <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div> -->
+                        </article>
+                      </div>
+
+                      <div class="col-md-3 col-sm-8 col-xs-12">
+                        <article class="material-card Pink">
+                          <h2>
+                            <span>Sean Penn</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Mystic River
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-sean-penn.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has won two Academy Awards, for his roles in the mystery drama Mystic River (2003) and the biopic Milk (2008). Penn began his acting career in television with a brief appearance in a 1974 episode of Little House on the Prairie ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-3 col-sm-8 col-xs-12">
+                        <article class="material-card Purple">
+                          <h2>
+                            <span>Clint Eastwood</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Million Dollar Baby
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-clint-eastwood.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He rose to international fame with his role as the Man with No Name in Sergio Leone's Dollars trilogy of spaghetti Westerns during the 1960s ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-3 col-sm-8 col-xs-12">
+                        <article class="material-card Deep-Purple">
+                          <h2>
+                            <span>Dustin Hoffman</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Kramer vs. Kramer
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-dustin-hoffman.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has been known for his versatile portrayals of antiheroes and vulnerable characters.[3] He won the Academy Award for Kramer vs. Kramer in 1979 ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+                  
+                </div>
+
+
+            </section>
+
         </div>
-        <div class="mc-description">
-          He has appeared in more than 100 films and television shows, including The Deer Hunter, Annie Hall, The Prophecy trilogy, The Dogs of War ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Pink">
-      <h2>
-        <span>Sean Penn</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Mystic River
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-sean-penn.jpg">
-        </div>
-        <div class="mc-description">
-          He has won two Academy Awards, for his roles in the mystery drama Mystic River (2003) and the biopic Milk (2008). Penn began his acting career in television with a brief appearance in a 1974 episode of Little House on the Prairie ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Purple">
-      <h2>
-        <span>Clint Eastwood</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Million Dollar Baby
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-clint-eastwood.jpg">
-        </div>
-        <div class="mc-description">
-          He rose to international fame with his role as the Man with No Name in Sergio Leone's Dollars trilogy of spaghetti Westerns during the 1960s ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Deep-Purple">
-      <h2>
-        <span>Dustin Hoffman</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Kramer vs. Kramer
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-dustin-hoffman.jpg">
-        </div>
-        <div class="mc-description">
-          He has been known for his versatile portrayals of antiheroes and vulnerable characters.[3] He won the Academy Award for Kramer vs. Kramer in 1979 ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Indigo">
-      <h2>
-        <span>Edward Norton</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          American History X
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-edward-norton.jpg">
-        </div>
-        <div class="mc-description">
-          He has been nominated for three Academy Awards for his work in the films Primal Fear, American History X and Birdman. He also starred in other roles ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Blue">
-      <h2>
-        <span>Michael Caine</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Educated Rita
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-michael-caine.jpg">
-        </div>
-        <div class="mc-description">
-          English actor and author. Renowned for his distinctive working class cockney accent, Caine has appeared in over 115 films and is regarded as a British ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-  
-</div>
-
-
-
-<div id="Paris" class="tabcontent">
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Red">
-      <h2>
-        <span>Christopher Walken</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          The Deer Hunter
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-christopher-walken.jpg">
-        </div>
-        <div class="mc-description">
-          He has appeared in more than 100 films and television shows, including The Deer Hunter, Annie Hall, The Prophecy trilogy, The Dogs of War ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Pink">
-      <h2>
-        <span>Sean Penn</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Mystic River
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-sean-penn.jpg">
-        </div>
-        <div class="mc-description">
-          He has won two Academy Awards, for his roles in the mystery drama Mystic River (2003) and the biopic Milk (2008). Penn began his acting career in television with a brief appearance in a 1974 episode of Little House on the Prairie ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Purple">
-      <h2>
-        <span>Clint Eastwood</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Million Dollar Baby
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-clint-eastwood.jpg">
-        </div>
-        <div class="mc-description">
-          He rose to international fame with his role as the Man with No Name in Sergio Leone's Dollars trilogy of spaghetti Westerns during the 1960s ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Deep-Purple">
-      <h2>
-        <span>Dustin Hoffman</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Kramer vs. Kramer
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-dustin-hoffman.jpg">
-        </div>
-        <div class="mc-description">
-          He has been known for his versatile portrayals of antiheroes and vulnerable characters.[3] He won the Academy Award for Kramer vs. Kramer in 1979 ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Indigo">
-      <h2>
-        <span>Edward Norton</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          American History X
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-edward-norton.jpg">
-        </div>
-        <div class="mc-description">
-          He has been nominated for three Academy Awards for his work in the films Primal Fear, American History X and Birdman. He also starred in other roles ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Blue">
-      <h2>
-        <span>Michael Caine</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Educated Rita
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-michael-caine.jpg">
-        </div>
-        <div class="mc-description">
-          English actor and author. Renowned for his distinctive working class cockney accent, Caine has appeared in over 115 films and is regarded as a British ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-  
-</div>
-
-<div id="Tokyo" class="tabcontent">
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Red">
-      <h2>
-        <span>Christopher Walken</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          The Deer Hunter
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-christopher-walken.jpg">
-        </div>
-        <div class="mc-description">
-          He has appeared in more than 100 films and television shows, including The Deer Hunter, Annie Hall, The Prophecy trilogy, The Dogs of War ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Pink">
-      <h2>
-        <span>Sean Penn</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Mystic River
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-sean-penn.jpg">
-        </div>
-        <div class="mc-description">
-          He has won two Academy Awards, for his roles in the mystery drama Mystic River (2003) and the biopic Milk (2008). Penn began his acting career in television with a brief appearance in a 1974 episode of Little House on the Prairie ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Purple">
-      <h2>
-        <span>Clint Eastwood</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Million Dollar Baby
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-clint-eastwood.jpg">
-        </div>
-        <div class="mc-description">
-          He rose to international fame with his role as the Man with No Name in Sergio Leone's Dollars trilogy of spaghetti Westerns during the 1960s ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Deep-Purple">
-      <h2>
-        <span>Dustin Hoffman</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Kramer vs. Kramer
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-dustin-hoffman.jpg">
-        </div>
-        <div class="mc-description">
-          He has been known for his versatile portrayals of antiheroes and vulnerable characters.[3] He won the Academy Award for Kramer vs. Kramer in 1979 ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Indigo">
-      <h2>
-        <span>Edward Norton</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          American History X
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-edward-norton.jpg">
-        </div>
-        <div class="mc-description">
-          He has been nominated for three Academy Awards for his work in the films Primal Fear, American History X and Birdman. He also starred in other roles ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Blue">
-      <h2>
-        <span>Michael Caine</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Educated Rita
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-michael-caine.jpg">
-        </div>
-        <div class="mc-description">
-          English actor and author. Renowned for his distinctive working class cockney accent, Caine has appeared in over 115 films and is regarded as a British ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-  
-</div>
-
-<div id="Oslo" class="tabcontent">
-
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Red">
-      <h2>
-        <span>Christopher Walken</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          The Deer Hunter
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-christopher-walken.jpg">
-        </div>
-        <div class="mc-description">
-          He has appeared in more than 100 films and television shows, including The Deer Hunter, Annie Hall, The Prophecy trilogy, The Dogs of War ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Pink">
-      <h2>
-        <span>Sean Penn</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Mystic River
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-sean-penn.jpg">
-        </div>
-        <div class="mc-description">
-          He has won two Academy Awards, for his roles in the mystery drama Mystic River (2003) and the biopic Milk (2008). Penn began his acting career in television with a brief appearance in a 1974 episode of Little House on the Prairie ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Purple">
-      <h2>
-        <span>Clint Eastwood</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Million Dollar Baby
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-clint-eastwood.jpg">
-        </div>
-        <div class="mc-description">
-          He rose to international fame with his role as the Man with No Name in Sergio Leone's Dollars trilogy of spaghetti Westerns during the 1960s ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Deep-Purple">
-      <h2>
-        <span>Dustin Hoffman</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Kramer vs. Kramer
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-dustin-hoffman.jpg">
-        </div>
-        <div class="mc-description">
-          He has been known for his versatile portrayals of antiheroes and vulnerable characters.[3] He won the Academy Award for Kramer vs. Kramer in 1979 ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Indigo">
-      <h2>
-        <span>Edward Norton</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          American History X
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-edward-norton.jpg">
-        </div>
-        <div class="mc-description">
-          He has been nominated for three Academy Awards for his work in the films Primal Fear, American History X and Birdman. He also starred in other roles ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Blue">
-      <h2>
-        <span>Michael Caine</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Educated Rita
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-michael-caine.jpg">
-        </div>
-        <div class="mc-description">
-          English actor and author. Renowned for his distinctive working class cockney accent, Caine has appeared in over 115 films and is regarded as a British ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-  
-</div>
-
-
-
-
-
-
-
-
-
-<!-- <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
-<button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
-<button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
-<button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button> -->
-
-<!-- </body>
-</html>  -->
-
-</section>
-
-</div>
 
         <div class="slide" data-anchor="slide2">
 
-
-
-<section class="container">
-
-  <br>
-  <br>
-  <br>
-  <br>
-
-<button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">Software</button>
-<button class="tablink" onclick="openCity('Paris', this, 'green')">Hardware</button>
-<button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
-<button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
-
- <div id="London" class="tabcontent">
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Red">
-      <h2>
-        <span>Brain Controlled Wheelchair</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          The Deer Hunter
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-christopher-walken.jpg">
-        </div>
-        <div class="mc-description">
-          He has appeared in more than 100 films and television shows, including The Deer Hunter, Annie Hall, The Prophecy trilogy, The Dogs of War ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Pink">
-      <h2>
-        <span>Sean Penn</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Mystic River
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-sean-penn.jpg">
-        </div>
-        <div class="mc-description">
-          He has won two Academy Awards, for his roles in the mystery drama Mystic River (2003) and the biopic Milk (2008). Penn began his acting career in television with a brief appearance in a 1974 episode of Little House on the Prairie ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Purple">
-      <h2>
-        <span>Clint Eastwood</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Million Dollar Baby
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-clint-eastwood.jpg">
-        </div>
-        <div class="mc-description">
-          He rose to international fame with his role as the Man with No Name in Sergio Leone's Dollars trilogy of spaghetti Westerns during the 1960s ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Deep-Purple">
-      <h2>
-        <span>Dustin Hoffman</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Kramer vs. Kramer
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-dustin-hoffman.jpg">
-        </div>
-        <div class="mc-description">
-          He has been known for his versatile portrayals of antiheroes and vulnerable characters.[3] He won the Academy Award for Kramer vs. Kramer in 1979 ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Indigo">
-      <h2>
-        <span>Edward Norton</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          American History X
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-edward-norton.jpg">
-        </div>
-        <div class="mc-description">
-          He has been nominated for three Academy Awards for his work in the films Primal Fear, American History X and Birdman. He also starred in other roles ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Blue">
-      <h2>
-        <span>Michael Caine</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Educated Rita
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-michael-caine.jpg">
-        </div>
-        <div class="mc-description">
-          English actor and author. Renowned for his distinctive working class cockney accent, Caine has appeared in over 115 films and is regarded as a British ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-  
-</div>
-
-
-
-<div id="Paris" class="tabcontent">
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Red">
-      <h2>
-        <span>Christopher Walken</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          The Deer Hunter
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-christopher-walken.jpg">
-        </div>
-        <div class="mc-description">
-          He has appeared in more than 100 films and television shows, including The Deer Hunter, Annie Hall, The Prophecy trilogy, The Dogs of War ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Pink">
-      <h2>
-        <span>Sean Penn</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Mystic River
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-sean-penn.jpg">
-        </div>
-        <div class="mc-description">
-          He has won two Academy Awards, for his roles in the mystery drama Mystic River (2003) and the biopic Milk (2008). Penn began his acting career in television with a brief appearance in a 1974 episode of Little House on the Prairie ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Purple">
-      <h2>
-        <span>Clint Eastwood</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Million Dollar Baby
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-clint-eastwood.jpg">
-        </div>
-        <div class="mc-description">
-          He rose to international fame with his role as the Man with No Name in Sergio Leone's Dollars trilogy of spaghetti Westerns during the 1960s ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Deep-Purple">
-      <h2>
-        <span>Dustin Hoffman</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Kramer vs. Kramer
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-dustin-hoffman.jpg">
-        </div>
-        <div class="mc-description">
-          He has been known for his versatile portrayals of antiheroes and vulnerable characters.[3] He won the Academy Award for Kramer vs. Kramer in 1979 ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Indigo">
-      <h2>
-        <span>Edward Norton</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          American History X
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-edward-norton.jpg">
-        </div>
-        <div class="mc-description">
-          He has been nominated for three Academy Awards for his work in the films Primal Fear, American History X and Birdman. He also starred in other roles ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Blue">
-      <h2>
-        <span>Michael Caine</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Educated Rita
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-michael-caine.jpg">
-        </div>
-        <div class="mc-description">
-          English actor and author. Renowned for his distinctive working class cockney accent, Caine has appeared in over 115 films and is regarded as a British ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-  
-</div>
-
-<div id="Tokyo" class="tabcontent">
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Red">
-      <h2>
-        <span>Christopher Walken</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          The Deer Hunter
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-christopher-walken.jpg">
-        </div>
-        <div class="mc-description">
-          He has appeared in more than 100 films and television shows, including The Deer Hunter, Annie Hall, The Prophecy trilogy, The Dogs of War ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Pink">
-      <h2>
-        <span>Sean Penn</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Mystic River
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-sean-penn.jpg">
-        </div>
-        <div class="mc-description">
-          He has won two Academy Awards, for his roles in the mystery drama Mystic River (2003) and the biopic Milk (2008). Penn began his acting career in television with a brief appearance in a 1974 episode of Little House on the Prairie ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Purple">
-      <h2>
-        <span>Clint Eastwood</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Million Dollar Baby
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-clint-eastwood.jpg">
-        </div>
-        <div class="mc-description">
-          He rose to international fame with his role as the Man with No Name in Sergio Leone's Dollars trilogy of spaghetti Westerns during the 1960s ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Deep-Purple">
-      <h2>
-        <span>Dustin Hoffman</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Kramer vs. Kramer
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-dustin-hoffman.jpg">
-        </div>
-        <div class="mc-description">
-          He has been known for his versatile portrayals of antiheroes and vulnerable characters.[3] He won the Academy Award for Kramer vs. Kramer in 1979 ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Indigo">
-      <h2>
-        <span>Edward Norton</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          American History X
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-edward-norton.jpg">
-        </div>
-        <div class="mc-description">
-          He has been nominated for three Academy Awards for his work in the films Primal Fear, American History X and Birdman. He also starred in other roles ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Blue">
-      <h2>
-        <span>Michael Caine</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Educated Rita
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-michael-caine.jpg">
-        </div>
-        <div class="mc-description">
-          English actor and author. Renowned for his distinctive working class cockney accent, Caine has appeared in over 115 films and is regarded as a British ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-  
-</div>
-
-<div id="Oslo" class="tabcontent">
-
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Red">
-      <h2>
-        <span>Christopher Walken</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          The Deer Hunter
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-christopher-walken.jpg">
-        </div>
-        <div class="mc-description">
-          He has appeared in more than 100 films and television shows, including The Deer Hunter, Annie Hall, The Prophecy trilogy, The Dogs of War ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Pink">
-      <h2>
-        <span>Sean Penn</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Mystic River
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-sean-penn.jpg">
-        </div>
-        <div class="mc-description">
-          He has won two Academy Awards, for his roles in the mystery drama Mystic River (2003) and the biopic Milk (2008). Penn began his acting career in television with a brief appearance in a 1974 episode of Little House on the Prairie ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Purple">
-      <h2>
-        <span>Clint Eastwood</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Million Dollar Baby
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-clint-eastwood.jpg">
-        </div>
-        <div class="mc-description">
-          He rose to international fame with his role as the Man with No Name in Sergio Leone's Dollars trilogy of spaghetti Westerns during the 1960s ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Deep-Purple">
-      <h2>
-        <span>Dustin Hoffman</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Kramer vs. Kramer
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-dustin-hoffman.jpg">
-        </div>
-        <div class="mc-description">
-          He has been known for his versatile portrayals of antiheroes and vulnerable characters.[3] He won the Academy Award for Kramer vs. Kramer in 1979 ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Indigo">
-      <h2>
-        <span>Edward Norton</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          American History X
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-edward-norton.jpg">
-        </div>
-        <div class="mc-description">
-          He has been nominated for three Academy Awards for his work in the films Primal Fear, American History X and Birdman. He also starred in other roles ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-
-  <div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Blue">
-      <h2>
-        <span>Michael Caine</span>
-        <strong>
-          <i class="fa fa-fw fa-star"></i>
-          Educated Rita
-        </strong>
-      </h2>
-      <div class="mc-content">
-        <div class="img-container">
-          <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-michael-caine.jpg">
-        </div>
-        <div class="mc-description">
-          English actor and author. Renowned for his distinctive working class cockney accent, Caine has appeared in over 115 films and is regarded as a British ...
-        </div>
-      </div>
-      <a class="mc-btn-action">
-        <i class="fa fa-bars"></i>
-      </a>
-      <div class="mc-footer">
-        <h4>
-          Social
-        </h4>
-        <a class="fa fa-fw fa-facebook"></a>
-        <a class="fa fa-fw fa-twitter"></a>
-        <a class="fa fa-fw fa-linkedin"></a>
-        <a class="fa fa-fw fa-google-plus"></a>
-      </div>
-    </article>
-  </div>
-
-  
-</div>
-
-
-
-
-
-
-
-
-
-<!-- <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
-<button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
-<button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
-<button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button> -->
-
-<!-- </body>
-</html>  -->
-
-</section>
-
+            <section class="container">
+
+
+                  <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">Software</button>
+                  <button class="tablink" onclick="openCity('Paris', this, 'green')">Hardware</button>
+                  <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
+                  <button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
+
+                   <div id="London" class="tabcontent">
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Red">
+                          <h2>
+                            <span>Brain Controlled Wheelchair</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              The Deer Hunter
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-christopher-walken.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has appeared in more than 100 films and television shows, including The Deer Hunter, Annie Hall, The Prophecy trilogy, The Dogs of War ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Pink">
+                          <h2>
+                            <span>Sean Penn</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Mystic River
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-sean-penn.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has won two Academy Awards, for his roles in the mystery drama Mystic River (2003) and the biopic Milk (2008). Penn began his acting career in television with a brief appearance in a 1974 episode of Little House on the Prairie ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Purple">
+                          <h2>
+                            <span>Clint Eastwood</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Million Dollar Baby
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-clint-eastwood.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He rose to international fame with his role as the Man with No Name in Sergio Leone's Dollars trilogy of spaghetti Westerns during the 1960s ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Deep-Purple">
+                          <h2>
+                            <span>Dustin Hoffman</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Kramer vs. Kramer
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-dustin-hoffman.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has been known for his versatile portrayals of antiheroes and vulnerable characters.[3] He won the Academy Award for Kramer vs. Kramer in 1979 ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Indigo">
+                          <h2>
+                            <span>Edward Norton</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              American History X
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-edward-norton.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has been nominated for three Academy Awards for his work in the films Primal Fear, American History X and Birdman. He also starred in other roles ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Blue">
+                          <h2>
+                            <span>Michael Caine</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Educated Rita
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-michael-caine.jpg">
+                            </div>
+                            <div class="mc-description">
+                              English actor and author. Renowned for his distinctive working class cockney accent, Caine has appeared in over 115 films and is regarded as a British ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+                    
+                  </div>
+
+
+
+                  <div id="Paris" class="tabcontent">
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Red">
+                          <h2>
+                            <span>Christopher Walken</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              The Deer Hunter
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-christopher-walken.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has appeared in more than 100 films and television shows, including The Deer Hunter, Annie Hall, The Prophecy trilogy, The Dogs of War ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Pink">
+                          <h2>
+                            <span>Sean Penn</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Mystic River
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-sean-penn.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has won two Academy Awards, for his roles in the mystery drama Mystic River (2003) and the biopic Milk (2008). Penn began his acting career in television with a brief appearance in a 1974 episode of Little House on the Prairie ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Purple">
+                          <h2>
+                            <span>Clint Eastwood</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Million Dollar Baby
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-clint-eastwood.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He rose to international fame with his role as the Man with No Name in Sergio Leone's Dollars trilogy of spaghetti Westerns during the 1960s ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Deep-Purple">
+                          <h2>
+                            <span>Dustin Hoffman</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Kramer vs. Kramer
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-dustin-hoffman.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has been known for his versatile portrayals of antiheroes and vulnerable characters.[3] He won the Academy Award for Kramer vs. Kramer in 1979 ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Indigo">
+                          <h2>
+                            <span>Edward Norton</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              American History X
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-edward-norton.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has been nominated for three Academy Awards for his work in the films Primal Fear, American History X and Birdman. He also starred in other roles ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Blue">
+                          <h2>
+                            <span>Michael Caine</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Educated Rita
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-michael-caine.jpg">
+                            </div>
+                            <div class="mc-description">
+                              English actor and author. Renowned for his distinctive working class cockney accent, Caine has appeared in over 115 films and is regarded as a British ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+                      
+                  </div>
+
+
+
+                  <div id="Tokyo" class="tabcontent">
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Red">
+                          <h2>
+                            <span>Christopher Walken</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              The Deer Hunter
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-christopher-walken.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has appeared in more than 100 films and television shows, including The Deer Hunter, Annie Hall, The Prophecy trilogy, The Dogs of War ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Pink">
+                          <h2>
+                            <span>Sean Penn</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Mystic River
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-sean-penn.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has won two Academy Awards, for his roles in the mystery drama Mystic River (2003) and the biopic Milk (2008). Penn began his acting career in television with a brief appearance in a 1974 episode of Little House on the Prairie ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Purple">
+                          <h2>
+                            <span>Clint Eastwood</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Million Dollar Baby
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-clint-eastwood.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He rose to international fame with his role as the Man with No Name in Sergio Leone's Dollars trilogy of spaghetti Westerns during the 1960s ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Deep-Purple">
+                          <h2>
+                            <span>Dustin Hoffman</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Kramer vs. Kramer
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-dustin-hoffman.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has been known for his versatile portrayals of antiheroes and vulnerable characters.[3] He won the Academy Award for Kramer vs. Kramer in 1979 ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Indigo">
+                          <h2>
+                            <span>Edward Norton</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              American History X
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-edward-norton.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has been nominated for three Academy Awards for his work in the films Primal Fear, American History X and Birdman. He also starred in other roles ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Blue">
+                          <h2>
+                            <span>Michael Caine</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Educated Rita
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-michael-caine.jpg">
+                            </div>
+                            <div class="mc-description">
+                              English actor and author. Renowned for his distinctive working class cockney accent, Caine has appeared in over 115 films and is regarded as a British ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+                    
+                  </div>
+
+
+
+                  <div id="Oslo" class="tabcontent">
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Red">
+                          <h2>
+                            <span>Christopher Walken</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              The Deer Hunter
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-christopher-walken.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has appeared in more than 100 films and television shows, including The Deer Hunter, Annie Hall, The Prophecy trilogy, The Dogs of War ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Pink">
+                          <h2>
+                            <span>Sean Penn</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Mystic River
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-sean-penn.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has won two Academy Awards, for his roles in the mystery drama Mystic River (2003) and the biopic Milk (2008). Penn began his acting career in television with a brief appearance in a 1974 episode of Little House on the Prairie ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Purple">
+                          <h2>
+                            <span>Clint Eastwood</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Million Dollar Baby
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-clint-eastwood.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He rose to international fame with his role as the Man with No Name in Sergio Leone's Dollars trilogy of spaghetti Westerns during the 1960s ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Deep-Purple">
+                          <h2>
+                            <span>Dustin Hoffman</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Kramer vs. Kramer
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-dustin-hoffman.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has been known for his versatile portrayals of antiheroes and vulnerable characters.[3] He won the Academy Award for Kramer vs. Kramer in 1979 ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Indigo">
+                          <h2>
+                            <span>Edward Norton</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              American History X
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-edward-norton.jpg">
+                            </div>
+                            <div class="mc-description">
+                              He has been nominated for three Academy Awards for his work in the films Primal Fear, American History X and Birdman. He also starred in other roles ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Blue">
+                          <h2>
+                            <span>Michael Caine</span>
+                            <strong>
+                              <i class="fa fa-fw fa-star"></i>
+                              Educated Rita
+                            </strong>
+                          </h2>
+                          <div class="mc-content">
+                            <div class="img-container">
+                              <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-michael-caine.jpg">
+                            </div>
+                            <div class="mc-description">
+                              English actor and author. Renowned for his distinctive working class cockney accent, Caine has appeared in over 115 films and is regarded as a British ...
+                            </div>
+                          </div>
+                          <a class="mc-btn-action">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                          <div class="mc-footer">
+                            <h4>
+                              Social
+                            </h4>
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                          </div>
+                        </article>
+                      </div>
+
+                  </div>
+
+            </section>
 
         </div>
-
 
     </div>
 
 
-    <div class="section" id="tab-CONTACT">
+
+
+<!--     <div class="section" id="tab-CONTACT">
 
 
 <section class="et-slide split" >
@@ -1913,38 +1789,41 @@
   </form>
 </div>
 
-          <style type="text/css" data-styleid="style-jozy71qw1">.style-jozy71qw1wrapper {min-width:180px;max-width:980px;position:relative;width:100%;text-align:center;}
-.style-jozy71qw1_hiddenField {display:none !important;}
-.style-jozy71qw1_first-row-wrapper {display:-webkit-box;display:-webkit-flex;display:flex;}
-.style-jozy71qw1_first-row-wrapper input {-webkit-box-flex:1;-webkit-flex:1;flex:1;min-width:0;}
-.style-jozy71qw1_first-row-wrapper input:first-child {margin-right:30px;}
-.style-jozy71qw1 input,.style-jozy71qw1 textarea {padding:5px;border:none;border-bottom:1px solid rgba(255, 255, 255, 1);color:#FFFFFF;margin:0 0 5px;width:100%;-webkit-transition:0.5s ease all;transition:0.5s ease all;background-color:transparent;-webkit-appearance:none;-moz-appearance:none;font:normal normal normal 15px/1.875em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif ;  -webkit-appearance:none;border-radius:0;}
-.style-jozy71qw1 input:focus,.style-jozy71qw1 textarea:focus {outline:none;border-color:rgba(255, 4, 90, 1);}
-.style-jozy71qw1 input.style-jozy71qw1_error,.style-jozy71qw1 textarea.style-jozy71qw1_error {font:normal normal normal 15px/1.875em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif ;    color:#FF0000;border-bottom:1px solid #FF0000;}
-.style-jozy71qw1 input.style-jozy71qw1_error::-webkit-input-placeholder,.style-jozy71qw1 textarea.style-jozy71qw1_error::-webkit-input-placeholder {color:#FF0000;}
-.style-jozy71qw1 input.style-jozy71qw1_error::-ms-input-placeholder,.style-jozy71qw1 textarea.style-jozy71qw1_error::-ms-input-placeholder {color:#FF0000;}
-.style-jozy71qw1 input.style-jozy71qw1_error::placeholder,.style-jozy71qw1 textarea.style-jozy71qw1_error::placeholder {color:#FF0000;}
-.style-jozy71qw1 input::-webkit-input-placeholder,.style-jozy71qw1 textarea::-webkit-input-placeholder {color:#FFFFFF;}
-.style-jozy71qw1 input::-ms-input-placeholder,.style-jozy71qw1 textarea::-ms-input-placeholder {color:#FFFFFF;}
-.style-jozy71qw1 input::placeholder,.style-jozy71qw1 textarea::placeholder {color:#FFFFFF;}
-.style-jozy71qw1 input {margin-bottom:12px;}
-.style-jozy71qw1 textarea {resize:none;overflow:hidden;margin:0 0 10px;}
-.style-jozy71qw1fieldMessage {min-height:128px;}
-.style-jozy71qw1submit {color:#FFFFFF;font:normal normal normal 15px/1.875em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif ;}
-.style-jozy71qw1submit:hover {cursor:pointer;}
-.style-jozy71qw1notifications {font:normal 14px 'Helvetica Neue', Helvetica, sans-serif;margin-top:20px;height:14px;}
-.style-jozy71qw1notifications.style-jozy71qw1_success {color:#BADA55;}
-.style-jozy71qw1notifications.style-jozy71qw1_error {color:#FF0000;}
-.style-jozy71qw1[data-state~="mobile"] input,.style-jozy71qw1[data-state~="mobile"] textarea {font-size:14px;}
-.style-jozy71qw1[data-state~="mobile"] input::-webkit-input-placeholder,.style-jozy71qw1[data-state~="mobile"] textarea::-webkit-input-placeholder {font-size:14px;}
-.style-jozy71qw1[data-state~="mobile"] input::-ms-input-placeholder,.style-jozy71qw1[data-state~="mobile"] textarea::-ms-input-placeholder {font-size:14px;}
-.style-jozy71qw1[data-state~="mobile"] input::placeholder,.style-jozy71qw1[data-state~="mobile"] textarea::placeholder {font-size:14px;}
-.style-jozy71qw1[data-state~="mobile"] input {min-height:35px;line-height:35px;margin-bottom:12px;}
-.style-jozy71qw1[data-state~="mobile"] textarea {min-height:110px;}
-.style-jozy71qw1[data-state~="right"] {direction:rtl;text-align:right;}
-.style-jozy71qw1[data-state~="right"] input {-webkit-box-flex:1;-webkit-flex:1;flex:1;min-width:0;}
-.style-jozy71qw1[data-state~="right"] input:first-child {margin-right:0;margin-left:30px;}
-.style-jozy71qw1[data-state~="left"] {direction:ltr;text-align:left;}</style>
+  <style type="text/css" data-styleid="style-jozy71qw1">
+                  .style-jozy71qw1wrapper {min-width:180px;max-width:980px;position:relative;width:100%;text-align:center;}
+        .style-jozy71qw1_hiddenField {display:none !important;}
+        .style-jozy71qw1_first-row-wrapper {display:-webkit-box;display:-webkit-flex;display:flex;}
+        .style-jozy71qw1_first-row-wrapper input {-webkit-box-flex:1;-webkit-flex:1;flex:1;min-width:0;}
+        .style-jozy71qw1_first-row-wrapper input:first-child {margin-right:30px;}
+        .style-jozy71qw1 input,.style-jozy71qw1 textarea {padding:5px;border:none;border-bottom:1px solid rgba(255, 255, 255, 1);color:#FFFFFF;margin:0 0 5px;width:100%;-webkit-transition:0.5s ease all;transition:0.5s ease all;background-color:transparent;-webkit-appearance:none;-moz-appearance:none;font:normal normal normal 15px/1.875em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif ;  -webkit-appearance:none;border-radius:0;}
+        .style-jozy71qw1 input:focus,.style-jozy71qw1 textarea:focus {outline:none;border-color:rgba(255, 4, 90, 1);}
+        .style-jozy71qw1 input.style-jozy71qw1_error,.style-jozy71qw1 textarea.style-jozy71qw1_error {font:normal normal normal 15px/1.875em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif ;    color:#FF0000;border-bottom:1px solid #FF0000;}
+        .style-jozy71qw1 input.style-jozy71qw1_error::-webkit-input-placeholder,.style-jozy71qw1 textarea.style-jozy71qw1_error::-webkit-input-placeholder {color:#FF0000;}
+        .style-jozy71qw1 input.style-jozy71qw1_error::-ms-input-placeholder,.style-jozy71qw1 textarea.style-jozy71qw1_error::-ms-input-placeholder {color:#FF0000;}
+        .style-jozy71qw1 input.style-jozy71qw1_error::placeholder,.style-jozy71qw1 textarea.style-jozy71qw1_error::placeholder {color:#FF0000;}
+        .style-jozy71qw1 input::-webkit-input-placeholder,.style-jozy71qw1 textarea::-webkit-input-placeholder {color:#FFFFFF;}
+        .style-jozy71qw1 input::-ms-input-placeholder,.style-jozy71qw1 textarea::-ms-input-placeholder {color:#FFFFFF;}
+        .style-jozy71qw1 input::placeholder,.style-jozy71qw1 textarea::placeholder {color:#FFFFFF;}
+        .style-jozy71qw1 input {margin-bottom:12px;}
+        .style-jozy71qw1 textarea {resize:none;overflow:hidden;margin:0 0 10px;}
+        .style-jozy71qw1fieldMessage {min-height:128px;}
+        .style-jozy71qw1submit {color:#FFFFFF;font:normal normal normal 15px/1.875em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif ;}
+        .style-jozy71qw1submit:hover {cursor:pointer;}
+        .style-jozy71qw1notifications {font:normal 14px 'Helvetica Neue', Helvetica, sans-serif;margin-top:20px;height:14px;}
+        .style-jozy71qw1notifications.style-jozy71qw1_success {color:#BADA55;}
+        .style-jozy71qw1notifications.style-jozy71qw1_error {color:#FF0000;}
+        .style-jozy71qw1[data-state~="mobile"] input,.style-jozy71qw1[data-state~="mobile"] textarea {font-size:14px;}
+        .style-jozy71qw1[data-state~="mobile"] input::-webkit-input-placeholder,.style-jozy71qw1[data-state~="mobile"] textarea::-webkit-input-placeholder {font-size:14px;}
+        .style-jozy71qw1[data-state~="mobile"] input::-ms-input-placeholder,.style-jozy71qw1[data-state~="mobile"] textarea::-ms-input-placeholder {font-size:14px;}
+        .style-jozy71qw1[data-state~="mobile"] input::placeholder,.style-jozy71qw1[data-state~="mobile"] textarea::placeholder {font-size:14px;}
+        .style-jozy71qw1[data-state~="mobile"] input {min-height:35px;line-height:35px;margin-bottom:12px;}
+        .style-jozy71qw1[data-state~="mobile"] textarea {min-height:110px;}
+        .style-jozy71qw1[data-state~="right"] {direction:rtl;text-align:right;}
+        .style-jozy71qw1[data-state~="right"] input {-webkit-box-flex:1;-webkit-flex:1;flex:1;min-width:0;}
+        .style-jozy71qw1[data-state~="right"] input:first-child {margin-right:0;margin-left:30px;}
+        .style-jozy71qw1[data-state~="left"] {direction:ltr;text-align:left;}
+
+</style>
 
 </div>
     </div>
@@ -1954,7 +1833,7 @@
 
 
 
-  </section>
+  </section> -->
 
 
 
@@ -1969,10 +1848,6 @@
 
     </div>
 </div>
-
-
-
-
 
 
 
