@@ -433,8 +433,11 @@ body:before {
 }
 
 header img {
-  height: 150px;
-  width: 150px;
+/*  height: 150px;
+  width: 150px;*/
+  height:100%;
+  width:70%;
+
   margin-top: -50px;
   border-radius: 10%;
   border: 5px solid #c0392b;
@@ -823,7 +826,7 @@ a {
   width: 100%;
   padding: 10px 16px;
   color: #fff;
-  font-size: 1.4em;
+  font-size: 1em;
   line-height: 1.6em;
   margin: 0;
   z-index: 10;
@@ -915,10 +918,10 @@ a {
 }
 .material-card .mc-description {
   position: absolute;
-  top: 100%;
-  right: 30px;
+/*  top: 100%;
+*/ /* right: 30px;
   left: 30px;
-  bottom: 54px;
+  bottom: 54px;*/
   overflow: hidden;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -1045,8 +1048,8 @@ a {
     top: auto;
     right: auto;
     left: auto;
-    padding: 50px 30px 70px 30px;
-    bottom: 0;
+/*    padding: 50px 30px 70px 30px;
+    bottom: 0;*/
   }
 }
 .material-card.mc-active .mc-footer {
