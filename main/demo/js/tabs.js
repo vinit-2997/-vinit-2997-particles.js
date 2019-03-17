@@ -15,8 +15,12 @@ function openCity(cityName, elmnt, color)
     tablinks[i].style.backgroundColor = "";
   }
 
+
   // Show the specific tab content
   document.getElementById(cityName).style.display = "block";
+
+  document.getElementById(cityName).style.setProperty("-webkit-transition", "all .8s ease-in-out");
+
 
   // Add the specific color to the button used to open the tab content
   elmnt.style.backgroundColor = color;
