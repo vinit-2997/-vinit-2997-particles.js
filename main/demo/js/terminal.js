@@ -214,7 +214,9 @@ window._is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mi
 			if (e.keyCode == 9) {
 				e.preventDefault();
 				var toAutocomplete = '';
-				var ar_functionlist = Array('clear', 'cls', 'doge', 'dancer', 'help', 'planetarium', 'scrollTo', 'comicSans', 'helvetica', 'ieLove', 'weather', 'exit', 'lipsum', 'fbShare', 'twShare', 'latestTweets', 'likeasir', 'shades', 'reset', 'stl', 'newsletter', 'feedback', 'git');
+				// var ar_functionlist = Array('clear', 'cls', 'doge', 'dancer', 'help', 'planetarium', 'scrollTo', 'comicSans', 'helvetica', 'ieBug', 'weather', 'exit', 'lipsum', 'fbShare', 'twShare', 'latestTweets', 'likeasir', 'shades', 'reset', 'stl', 'newsletter', 'feedback', 'git');
+				var ar_functionlist = Array('clear', 'cls', 'help', 'comicSans', 'helvetica', 'ieBug', 'exit', 'fbShare', 'twShare', 'reset','facebook');
+
 				var ar_terminal_lines = $("#onlineTerminal").html().split("\n");
 				var lastline = ar_terminal_lines[ar_terminal_lines.length - 1].toString().replace("\r", '').replace(String.fromCharCode('155'), '').trim();
 				var ar_functionlist_length = ar_functionlist.length;
@@ -364,73 +366,47 @@ window._is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mi
 			//ga( 'send', 'event', 'toys', 'terminal', 'dancer');
 		}
 
+
+
 		function help(customFunctionName) {
 			if (typeof customFunctionName === "undefined") {
 				response = 'You can try: ';
-				response += '<strong>clear()</strong>/<strong>cls()</strong>';
+				
 				response += ', <strong>comicSans()</strong>';
-				response += ', <strong>dancer(options)</strong>';
-				response += ', <strong>doge(options)</strong>';
-				response += ', <strong>exit()</strong>';
-				response += ', <strong>fbShare()</strong>';
+				response += ', <strong>ieBug()</strong>';
+				response += ', <strong>facebook()()</strong>';
+				response += ', <strong>linkedin()</strong>';
+				response += ', <strong>github()</strong>';
+				response += ', <strong>medium()</strong>';
 				response += ', <strong>helvetica()</strong>';
 				response += ', <strong>reset()</strong>';
-				response += ', <strong>likeasir()</strong>';
-				response += ', <strong>scrollTo()</strong>';
-				response += ', <strong>shades()</strong>';
-				response += ', <strong>twShare()</strong>';
-				response += ', <strong>stl()</strong>';
-				response += ', <strong>pyDocs()</strong>';
-				response += ', <strong>newsletter()</strong>';
-				response += ', <strong>feedback()</strong>';
-				response += ', <strong>git()</strong>'
-				response += ', <strong>ieLove()</strong>';
-				// response += ', <strong>weather()</strong>';
-				response += ' or any javascript will work.' + breakLine() + breakLine() + 'For more info <strong>help(\'functionName\')</strong>. e.g. <strong>help(\'doge\')</strong>';
+				response += ', <strong>exit()</strong>';
+				response += '<strong>clear()</strong>/<strong>cls()</strong>';
+				
+				
+				
+				
+				response += 'For more info <strong>help(\'functionName\')</strong>. e.g. <strong>help(\'ieBug\')</strong>';
 			} else {
 				customFunctionName = customFunctionName.replace('()', '').toLowerCase();
 				response = 'No no. <strong>' + customFunctionName + '</strong> is no here.';
 				if (customFunctionName == 'clear') response = 'Get a fresh start, removing all text from JS Terminal.';
 				if (customFunctionName == 'cls') response = 'Get a fresh start, removing all text from JS Terminal.';
 				if (customFunctionName == 'comicsans') response = 'Changes the font style of the entire site to Comic Sans. It should be a crime if you ask me.';
-				if (customFunctionName == 'dancer') response = 'Shows a totally random gif dancer on a random place on the screen. Do you feel like dancing?';
-				if (customFunctionName == 'doge') response = 'Shows Doge text on the screen.' + breakLine() + breakLine() + '<strong>doge(\'clear\')</strong> removes it all.';
-				if (customFunctionName == 'exit') response = 'It closes the Terminal.';
-				if (customFunctionName == 'fbShare') response = 'Share Codecell with you friends on Facebook.';
-				if (customFunctionName == 'help') response = 'Captain Obvious is obvious o/';
 				if (customFunctionName == 'helvetica') response = 'Changes the font style of the entire site to Helvetica. Ironically.';
-				if (customFunctionName == 'latestTweets') response = 'Get the latest tweets';
-				if (customFunctionName == 'likeasir') response = 'See the world through the eyes of a gentleman.';
-				if (customFunctionName == 'scrollto') response = 'It takes you to the specified object. E.g. <strong>scrollTo(\'footer\')</strong>. Much better than clicking. Isn\'t it?';
-				if (customFunctionName == 'shades') response = 'See the world through the eyes of a douchebag.';
-				if (customFunctionName == 'twShare') response = 'Share Codecell with you friends on Twitter.';
-				if (customFunctionName == 'stl') response = 'Opens STL Reference material by Codecell team';
-				if (customFunctionName == 'git') response = 'Opens Git-Github Reference material by Codecell team';
-				if (customFunctionName == 'pyDocs') response = 'Opens Python reference material by Codecell team';
-				if (customFunctionName == 'newsletter') response = 'Opens our exquisitive newsletter, written only for you !';
-				if (customFunctionName == 'feedback') response = 'Opens up the perfect place, to showcase your love for us !';
+				if (customFunctionName == 'exit') response = 'It closes the Terminal.';
+				if (customFunctionName == 'facebook') response = 'Opens the facebook profile';
+				if (customFunctionName == 'linkedin') response = 'Opens the linkedin profile';
+				if (customFunctionName == 'github') response = 'Opens the github profile';
+				if (customFunctionName == 'medium') response = 'Opens the medium profile';
+				if (customFunctionName == 'help') response = 'Help helps you :)';
+				if (customFunctionName == 'iebug') response = 'The great Internet Explorer Bug ! Hope it not real:)';
 				//if (customFunctionName == 'weather')      response = 'Shows the weather forecast for the two days of JSConf 2014. It will be available only 5 days before the event.';
 			}
 			$("#onlineTerminal").html($("#onlineTerminal").html().trim() + '<span class="response">' + response + '</span>' + breakLine() + breakLine());
 			////ga( 'send', 'event', 'toys', 'terminal', 'help');
 		}
 
-		function planetarium() {
-			$(".planetarium").click();
-			$("#onlineTerminal").html($("#onlineTerminal").html().trim() + '<span class="response">Gracias</span>' + breakLine() + breakLine());
-			setTimeout(function () {
-				$("#onlineTerminal .response:last").append('.')
-			}, 500);
-			setTimeout(function () {
-				$("#onlineTerminal .response:last").append('.')
-			}, 1000);
-			setTimeout(function () {
-				$("#onlineTerminal .response:last").append('.')
-			}, 1500);
-			setTimeout(function () {
-				$("#onlineTerminal .response:last").append(' totales')
-			}, 2000);
-		}
 
 		function scrollTo(part) {
 			// This function can take two types of arguments: a number (offset) or a selector
@@ -472,7 +448,7 @@ window._is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mi
 			//ga( 'send', 'event', 'toys', 'terminal', 'helvetica');
 		}
 
-		function ieLove(func_options) {
+		function ieBug(func_options) {
 			if (typeof (func_options) === 'undefined') func_options = '';
 			if (func_options === 'clear') {
 				$("#onlineTerminal").html($("#onlineTerminal").html().trim() + '<span class="response">Phew that was a relief. *sigh*</span>' + breakLine() + breakLine());
@@ -513,231 +489,152 @@ window._is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mi
 					context.drawImage(image, event.touches[i].pageX - imageWidthHalf, event.touches[i].pageY - imageHeightHalf);
 				}
 			}
-			$("#onlineTerminal").html($("#onlineTerminal").html().trim() + '<span class="response">Oh... IE, we love you anyway.</span>' + breakLine() + breakLine());
-			//ga( 'send', 'event', 'toys', 'terminal', 'ieLove');
+			$("#onlineTerminal").html($("#onlineTerminal").html().trim() + '<span class="response">Internet Explorer has Encountered a Problem and Needs to Close. Haha..just joking:)....Refresh your page!</span>' + breakLine() + breakLine());
+			//ga( 'send', 'event', 'toys', 'terminal', 'ieBug');
 		}
 
-		function weather() {
-			var fiveDaysBeforeJSConf = new Date(2017, 03, 18);
-			var today = new Date();
-			//if (today.getTime() < fiveDaysBeforeJSConf.getTime()) {
-			//$("#onlineTerminal").html($("#onlineTerminal").html().trim()+'<span class="response">Too soon. The weather forecast will be available five days before the event.</span>'+breakLine()+breakLine());
-			//} else {
-			$("#onlineTerminal").html($("#onlineTerminal").html().trim() + '<span class="response">Loading weather condition for KJSCE...</span>' + breakLine() + breakLine());
-			var uri = ""; //"//api.worldweatheronline.com/free/v1/weather.ashx?q=Buenos%20Aires&format=json&num_of_days=2&date=2014-11-29&lang=es&key=c0bc674c45172b0ab46399b10bd4c0e1bf532d17";
-			$.getJSON(uri, function (data) {
-				var weatherResponse = $("#onlineTerminal").html().trim() + '<span class="response">' +
-					'Date: <strong>' + data['data']['weather'][0]['date'] + '</strong>' + breakLine() +
-					'Max: <strong>' + data['data']['weather'][0]['tempMaxC'] + '&deg;C (' + data['data']['weather'][0]['tempMaxF'] + '&deg;F)</strong>' + breakLine() +
-					'Min: <strong>' + data['data']['weather'][0]['tempMinC'] + '&deg;C (' + data['data']['weather'][0]['tempMinF'] + '&deg;F)</strong>' + breakLine() +
-					'<strong>' + data['data']['weather'][0]['weatherDesc'][0]['value'] + '</strong>' + breakLine() +
-					breakLine();
-				if (data['data']['weather'][1]) {
-					weatherResponse = weatherResponse + 'Date: <strong>' + data['data']['weather'][1]['date'] + '</strong>' + breakLine() +
-						'Max: <strong>' + data['data']['weather'][1]['tempMaxC'] + '&deg;C (' + data['data']['weather'][1]['tempMaxF'] + '&deg;F)</strong>' + breakLine() +
-						'Min: <strong>' + data['data']['weather'][1]['tempMinC'] + '&deg;C (' + data['data']['weather'][1]['tempMinF'] + '&deg;F)</strong>' + breakLine() +
-						'<strong>' + data['data']['weather'][1]['weatherDesc'][0]['value'] + '</strong>' + breakLine() +
-						'</span>' + breakLine();
-				}
-
-				$("#onlineTerminal").html(weatherResponse);
-				setEndOfContenteditable(document.getElementById("onlineTerminal"));
-			});
-			//}
-			//ga( 'send', 'event', 'toys', 'terminal', 'weather');
-		}
+	
 
 		function exit() {
 			$('.terminalHandle').click();
 			terminalOpen = false;
 		}
 
-		function lipsum() {
-			var getDocumentBody = function () {
-				if (document.getElementsByTagName) {
-					return document.getElementsByTagName('main').item(0);
-				} else if (document.main) {
-					return document.main;
-				} else if ((document.all) && (document.all.tags)) {
-					return document.all.tags('main')[0];
-				} else {
-					return null;
-				}
-			};
-			var loremipsum = ["Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna."];
-			var whitespaceAtFrontRe = /^[\s\xa0]+/;
-			var whitespaceAtEndRe = /[\s\xa0]+$/;
-			var punctationRe = /([:!?\.])$/;
-			var punctationFrontRe = /^([:!?\.]\s+)/;
-			var capatializedRe = /^[^\wÄÖÜÀÀÁÈÉÇ]*[A-ZÄÖÜÀÀÁÈÉÇ]/;
-			var simpleExpressionRe = /^[\(\[]?.[:\.\)\]]?$/;
-			var singleWordRe = /^\w*$/;
-			var charAtFrontRe = /^[a-z]/i;
-			var headlineRe = /^H[1-3]$/i;
-			var lastTextHadPunctation = false;
-			var foundMain = false;
-			var idx = 0;
-			var getLoremIpsum = function (e, t, n) {
-				if (!foundMain && t) {
-					idx = 0;
-					foundMain = true
-				}
-				var r = loremipsum[idx];
-				var i = r.length;
-				while (i < e) {
-					if (++idx >= loremipsum.length) idx = 0;
-					r += " " + loremipsum[idx];
-					i = r.length
-				}
-				if (i > e) {
-					var s = r.substring(0, e);
-					var o = r.substring(e).replace(/\s.*$/, "");
-					if (!n && (o.length < 3 || singleWordRe.test(s) && charAtFrontRe.test(r.charAt(e)))) {
-						r = s + o
-					} else {
-						r = s.replace(/,?\s\w*$/, "")
-					}
-					if (r.length > 3) r = r.replace(/\s\w$/, "")
-				}
-				r = r.replace(/\s+$/, "");
-				if (++idx >= loremipsum.length) idx = 0;
-				return r
-			};
-			var replaceText = function (e, t) {
-				var n = e.nodeValue;
-				if (!n) return;
-				var r = n.length;
-				n = n.replace(whitespaceAtFrontRe, "");
-				var i = n.length != r;
-				r = n.length;
-				n = n.replace(whitespaceAtEndRe, "");
-				var s = n.length != r;
-				r = n.length;
-				if (r > 0 && !simpleExpressionRe.test(n)) {
-					var o = getLoremIpsum(r, t, singleWordRe.test(n));
-					var u = punctationRe.exec(n);
-					if (u) {
-						o = o.replace(/[,\.]+$/, "").replace(/\s+$/, "") + u[1]
-					} else {
-						o = o.replace(/,\s*$/, "")
-					}
-					var a = o.charAt(0);
-					var f = o.substring(1);
-					o = (lastTextHadPunctation || capatializedRe.test(n) ? a.toUpperCase() : a.toLowerCase()) + f;
-					u = punctationFrontRe.exec(n);
-					if (u) o = u[1] + o;
-					lastTextHadPunctation = punctationRe.test(o);
-					if (i) o = " " + o;
-					if (s) o += " ";
-					e.nodeValue = o
-				}
-			};
-			var scanElement = function (e, t) {
-				var n = e.firstChild;
-				while (n) {
-					var r = n.nodeType;
-					var i = n.nextSibling;
-					if (r == 1) {
-						var s = n.nodeName;
-						if (s != "SCRIPT" && s != "STYLE" && s != "EMBED") {
-							scanElement(n, t || headlineRe.test(s))
-						}
-					} else if (r == 3) {
-						replaceText(n, t)
-					}
-					n = i
-				}
-			};
-			var b = getDocumentBody();
-			if (b) {
-				scanElement(b, false)
-			}
+		// function lipsum() {
+		// 	var getDocumentBody = function () {
+		// 		if (document.getElementsByTagName) {
+		// 			return document.getElementsByTagName('main').item(0);
+		// 		} else if (document.main) {
+		// 			return document.main;
+		// 		} else if ((document.all) && (document.all.tags)) {
+		// 			return document.all.tags('main')[0];
+		// 		} else {
+		// 			return null;
+		// 		}
+		// 	};
+		// 	var loremipsum = ["Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna."];
+		// 	var whitespaceAtFrontRe = /^[\s\xa0]+/;
+		// 	var whitespaceAtEndRe = /[\s\xa0]+$/;
+		// 	var punctationRe = /([:!?\.])$/;
+		// 	var punctationFrontRe = /^([:!?\.]\s+)/;
+		// 	var capatializedRe = /^[^\wÄÖÜÀÀÁÈÉÇ]*[A-ZÄÖÜÀÀÁÈÉÇ]/;
+		// 	var simpleExpressionRe = /^[\(\[]?.[:\.\)\]]?$/;
+		// 	var singleWordRe = /^\w*$/;
+		// 	var charAtFrontRe = /^[a-z]/i;
+		// 	var headlineRe = /^H[1-3]$/i;
+		// 	var lastTextHadPunctation = false;
+		// 	var foundMain = false;
+		// 	var idx = 0;
+		// 	var getLoremIpsum = function (e, t, n) {
+		// 		if (!foundMain && t) {
+		// 			idx = 0;
+		// 			foundMain = true
+		// 		}
+		// 		var r = loremipsum[idx];
+		// 		var i = r.length;
+		// 		while (i < e) {
+		// 			if (++idx >= loremipsum.length) idx = 0;
+		// 			r += " " + loremipsum[idx];
+		// 			i = r.length
+		// 		}
+		// 		if (i > e) {
+		// 			var s = r.substring(0, e);
+		// 			var o = r.substring(e).replace(/\s.*$/, "");
+		// 			if (!n && (o.length < 3 || singleWordRe.test(s) && charAtFrontRe.test(r.charAt(e)))) {
+		// 				r = s + o
+		// 			} else {
+		// 				r = s.replace(/,?\s\w*$/, "")
+		// 			}
+		// 			if (r.length > 3) r = r.replace(/\s\w$/, "")
+		// 		}
+		// 		r = r.replace(/\s+$/, "");
+		// 		if (++idx >= loremipsum.length) idx = 0;
+		// 		return r
+		// 	};
+		// 	var replaceText = function (e, t) {
+		// 		var n = e.nodeValue;
+		// 		if (!n) return;
+		// 		var r = n.length;
+		// 		n = n.replace(whitespaceAtFrontRe, "");
+		// 		var i = n.length != r;
+		// 		r = n.length;
+		// 		n = n.replace(whitespaceAtEndRe, "");
+		// 		var s = n.length != r;
+		// 		r = n.length;
+		// 		if (r > 0 && !simpleExpressionRe.test(n)) {
+		// 			var o = getLoremIpsum(r, t, singleWordRe.test(n));
+		// 			var u = punctationRe.exec(n);
+		// 			if (u) {
+		// 				o = o.replace(/[,\.]+$/, "").replace(/\s+$/, "") + u[1]
+		// 			} else {
+		// 				o = o.replace(/,\s*$/, "")
+		// 			}
+		// 			var a = o.charAt(0);
+		// 			var f = o.substring(1);
+		// 			o = (lastTextHadPunctation || capatializedRe.test(n) ? a.toUpperCase() : a.toLowerCase()) + f;
+		// 			u = punctationFrontRe.exec(n);
+		// 			if (u) o = u[1] + o;
+		// 			lastTextHadPunctation = punctationRe.test(o);
+		// 			if (i) o = " " + o;
+		// 			if (s) o += " ";
+		// 			e.nodeValue = o
+		// 		}
+		// 	};
+		// 	var scanElement = function (e, t) {
+		// 		var n = e.firstChild;
+		// 		while (n) {
+		// 			var r = n.nodeType;
+		// 			var i = n.nextSibling;
+		// 			if (r == 1) {
+		// 				var s = n.nodeName;
+		// 				if (s != "SCRIPT" && s != "STYLE" && s != "EMBED") {
+		// 					scanElement(n, t || headlineRe.test(s))
+		// 				}
+		// 			} else if (r == 3) {
+		// 				replaceText(n, t)
+		// 			}
+		// 			n = i
+		// 		}
+		// 	};
+		// 	var b = getDocumentBody();
+		// 	if (b) {
+		// 		scanElement(b, false)
+		// 	}
 
-			$("#onlineTerminal").html($("#onlineTerminal").html().trim() + '<span class="response">Lorem what?.</span>' + breakLine() + breakLine());
-			//ga( 'send', 'event', 'toys', 'terminal', 'lipsum');
-		}
+		// 	$("#onlineTerminal").html($("#onlineTerminal").html().trim() + '<span class="response">Lorem what?.</span>' + breakLine() + breakLine());
+		// 	//ga( 'send', 'event', 'toys', 'terminal', 'lipsum');
+		// }
 
-		function fbShare() {
-			var winWidth = 520;
-			var winHeight = 350;
-			var winTop = ((screen.height - winHeight) / 2) - (winHeight / 2);
-			var winLeft = ((screen.width - winWidth) / 2) - (winWidth / 2);
-			window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fkjscecodecell%2F', 'sharer', 'top=' + winTop + ', left=' + winLeft + ', toolbar=0, status=0, width=' + winWidth + ', height=' + winHeight, true);
-			$("#onlineTerminal").html($("#onlineTerminal").html().trim() + '<span class="response">Please allow popups in your browser</span>' + breakLine() + breakLine());
-			//ga( 'send', 'event', 'toys', 'terminal', 'fbShare');
-		}
+			function facebook()
+			 {
+			 	window.open("https://www.facebook.com/vinit.todai");
+		     }
 
-		function twShare() {
-			var winWidth = 605;
-			var winHeight = 428;
-			var winTop = ((screen.height - winHeight) / 2) - (winHeight / 2);
-			var winLeft = ((screen.width - winWidth) / 2) - (winWidth / 2);
-			window.open("https://twitter.com/home?status=Checkout%20KJSCE%20CodeCell's%20new%20awesome%20website%20http%3A%2F%2Fkjscecodecell.com%2F", 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight, true);
-			$("#onlineTerminal").html($("#onlineTerminal").html().trim() + '<span class="response">Please allow popups in your browser</span>' + breakLine() + breakLine());
-			//ga( 'send', 'event', 'toys', 'terminal', 'twShare');
-		}
+			function medium() 
+			{
+			   window.open("https://medium.com/@vinit.todai");
+		    }
 
-		function stl() {
-			window.open("http://www.kjscecodecell.com/standard-library-in-x/");
-		}
+			function github() 
+			{
+			   window.open("https://github.com/vinit-2997");
+		    }
 
-		function git() {
-			window.open("https://www.kjscecodecell.com/Git-CheatSheet/");
-		}
+			function linkedin() 
+			{
+			   window.open("https://www.linkedin.com/in/vinit-todai");
+		    }
 
-		function pyDocs() {
-			window.open("http://www.kjscecodecell.com/Introduction-to-programming/python/");
-		}
-
-		function newsletter() {
-			window.open("https://www.kjscecodecell.com/newsletters/");
-		}
-
-		function feedback() {
-			window.open("https://goo.gl/forms/rW512h2vzIYOqXsF3");
-		}
-
-		function latestTweets() {
-			$("#onlineTerminal").html($("#onlineTerminal").html().trim() + '<span class="response">Getting the latest tweets from @jsconfar</span>' + breakLine() + breakLine());
-			$.getJSON("http://cdn.syndication.twimg.com/widgets/timelines/512296174846349312?dnt=true&domain=unquietcode.com&lang=en&callback=?", function (data) {
-				var tweets = $(data.body).find('li.tweet');
-				for (var i = 0; i < 5; i++) {
-					var cur = $(tweets[i]);
-					var tweet = {};
-					tweet.date = cur.find("a.u-url").attr("data-datetime");
-					tweet.id = cur.attr("data-tweet-id");
-					$("#onlineTerminal").html($("#onlineTerminal").html().trim() + '<span class="response"><strong>@jsconfar: </strong>' + $.trim(cur.find("p.e-entry-title").html()) + '<em> on ' + tweet.date.substr(0, 10) + '</em></span>' + breakLine() + breakLine());
-				}
-				setEndOfContenteditable(document.getElementById("onlineTerminal"));
-			});
-			//ga( 'send', 'event', 'toys', 'terminal', 'latestTweets');
-		}
-
-		function likeasir(func_options) {
-			if (typeof func_options === "undefined") func_options = '';
-			$('#likeasir').remove();
-			$('#shades').remove()
-			if (func_options != "clear") {
-				$('body').append($('<div style="background:url(static/images/likeasir.png) center center no-repeat;background-size:auto 100%;position:fixed;left:0;top:0;width:100%;height:100%;" id="likeasir"></div>'));
-				$("#onlineTerminal").html($("#onlineTerminal").html().trim() + '<span class="response">I mustache you a question, but I\'ll shave it for later.</span>' + breakLine() + breakLine());
-			} else {
-				$("#onlineTerminal").html($("#onlineTerminal").html().trim() + '<span class="response">Too fancy. *sigh*</span>' + breakLine() + breakLine());
-			}
-			//ga( 'send', 'event', 'toys', 'terminal', 'likeasir');
-		}
-
-		function shades(func_options) {
-			if (typeof func_options === "undefined") func_options = '';
-			$('#likeasir').remove();
-			$('#shades').remove();
-			if (func_options != "clear") {
-				$('body').append($('<div style="background:url(static/images/kanye_glasses.png) center center no-repeat;background-size:100% auto;position:fixed;left:0;top:0;width:100%;height:100%;" id="shades"></div>'));
-				$("#onlineTerminal").html($("#onlineTerminal").html().trim() + '<span class="response">Wake up in the mornin\' feelin\' like Kanye.</span>' + breakLine() + breakLine());
-			} else {
-				$("#onlineTerminal").html($("#onlineTerminal").html().trim() + '<span class="response">I was feeling like a total douche. *sigh*</span>' + breakLine() + breakLine());
-			}
-			//ga( 'send', 'event', 'toys', 'terminal', 'shades');
-		}
+			// function mail_me() 
+			// {
+			// var winWidth = 605;
+			// var winHeight = 428;
+			// var winTop = ((screen.height - winHeight) / 2) - (winHeight / 2);
+			// var winLeft = ((screen.width - winWidth) / 2) - (winWidth / 2);
+			// window.open("https://twitter.com/home?status=Checkout%20KJSCE%20CodeCell's%20new%20awesome%20website%20http%3A%2F%2Fkjscecodecell.com%2F", 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight, true);
+			// $("#onlineTerminal").html($("#onlineTerminal").html().trim() + '<span class="response">Please allow popups in your browser</span>' + breakLine() + breakLine());
+			// //ga( 'send', 'event', 'toys', 'terminal', 'twShare');
+		 //  }
 
 		function tryToclear(func, arg) {
 			try {
@@ -751,7 +648,7 @@ window._is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mi
 			c
 			var c = "clear";
 			tryToclear(shades, c);
-			tryToclear(ieLove, c);
+			tryToclear(ieBug, c);
 			tryToclear(likeasir, c);
 			tryToclear(dancer, c);
 			clear();

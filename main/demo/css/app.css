@@ -627,15 +627,18 @@ figure > div .beginner {
   border: 0px;
   text-align: center;
   position: relative;
-  background: url('../images/graph_sprite.png') -75px 0px no-repeat;
+  background: url('../images/graph_sprite4.png') -75px 0px no-repeat;
+  z-index: 100000000;
 }
 figure > div .beginner.alt {
   height: 115px;
+  z-index: 100000000;
 }
 figure > div .beginner.alt div {
   position: absolute;
   bottom: 0px;
   left: 3px;
+  z-index: 100000000;
 }
 figure > div .intermediate {
   height: 98px;
@@ -644,15 +647,18 @@ figure > div .intermediate {
   border: 0px;
   text-align: center;
   position: relative;
-  background: url('../images/graph_sprite.png') -50px 0px no-repeat;
+  background: url('../images/graph_sprite4.png') -50px 0px no-repeat;
+  z-index: 100000000;
 }
 figure > div .intermediate.alt {
   height: 115px;
+  z-index: 100000000;
 }
 figure > div .intermediate.alt div {
   position: absolute;
   bottom: 0px;
   left: 3px;
+  z-index: 100000000;
 }
 figure > div .advanced {
   height: 98px;
@@ -661,15 +667,20 @@ figure > div .advanced {
   border: 0px;
   text-align: center;
   position: relative;
-  background: url('../images/graph_sprite.png') -25px 0px no-repeat;
+  background: url('../images/graph_sprite4.png') -25px 0px no-repeat;
+  z-index: 100000000;
 }
 figure > div .advanced.alt {
   height: 115px;
+    z-index: 100000000;
+
 }
 figure > div .advanced.alt div {
   position: absolute;
   bottom: 0px;
   left: 3px;
+    z-index: 100000000;
+
 }
 figure > div .expert {
   height: 98px;
@@ -678,15 +689,18 @@ figure > div .expert {
   border: 0px;
   text-align: center;
   position: relative;
-  background: url('../images/graph_sprite.png') 0px 0px no-repeat;
+  background: url('../images/graph_sprite4.png') 0px 0px no-repeat;
+  z-index: 100000000;
 }
 figure > div .expert.alt {
   height: 115px;
+  z-index: 100000000;
 }
 figure > div .expert.alt div {
   position: absolute;
   bottom: 0px;
   left: 3px;
+  z-index: 100000000;
 }
 .social {
   display: flex;

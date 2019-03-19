@@ -20,16 +20,16 @@
 
 <body>
 
-  <div class="et-hero-tabs-container">
-    <a class="et-hero-tab" href="#tab-MAIN">HOME</a>
-    <a class="et-hero-tab" href="#tab-ABOUT">ABOUT</a>
-    <a class="et-hero-tab" href="#tab-PROJECTS">PROJECTS</a>
-    <a class="et-hero-tab" href="#tab-CONTACT">CONTACT</a>
-    <a class="et-hero-tab" href="#tab-TERMINAL">TERMINAL</a>
+  <nav class="et-hero-tabs-container">
+    <a style="float:left" class="et-hero-tab" href="#tab-MAIN">HOME</a>
+    <a style="float:left" class="et-hero-tab" href="#tab-ABOUT">ABOUT</a>
+    <a style="float:right" class="et-hero-tab" href="#tab-PROJECTS">PROJECTS</a>
+<!--     <a class="et-hero-tab" href="#tab-CONTACT">CONTACT</a>
+ -->    <a style="float:right" onclick="launchJSTerminal();" class="et-hero-tab" href="#tab-TERMINAL">TERMINAL</a>
     <span class="et-hero-tab-slider"></span>
-  </div>
+  </nav>
 
-  <div id="contTerminal" class="closedTerminal terminalsizeanimated faa-parent faa-bounce animated" style="overflow:visible !important">
+  <div id="contTerminal" class="closedTerminal terminalsizeanimated" style="overflow:visible !important">
     <div id="onlineTerminal" contenteditable spellcheck="false"></div>
     <a onclick="launchJSTerminal();" class="terminalHandle"></a>
   </div>
@@ -45,14 +45,16 @@
                 <header>
                   <a href="https://tutsplus.com"><img src="./images/icons/logo.PNG"></a>
                   <h1>Vinit Todai</h1>
-                  <h2>Young Engineer !</h2>
+                  <h2>  <font color="white">
+                      Young Engineer !
+                        </font>
+                    </h2>
                 </header>
 
                 <div class="profile-bio">
                   <p>
-                    ••.•´¯`•.•• V҉T҉ ••.•´¯`•.••
-                    Engineer by profession, Writer by chance
-                  Maker and Startup Enthusiast</p>
+                  <!-- ••.•´¯`•.•• V҉T҉ ••.•´¯`•.•• -->
+                  Engineer by profession, Writer by chance, Maker and Startup Enthusiast and a avid reader.</p>
                 </div>
 
 
@@ -113,17 +115,18 @@
 
 
 
-            <section class="et-slide" id="tab-ABOUT">
-              <br><br><br><br><br><br>
+            <section class="et-slide" >
+              <br><br><br><br>
 
- <div>
+<!--  <div>
   <div class="row">
     <div class="col-3">.col-3</div>
     <div class="col-6">.col-9</div>
   </div>
-</div>                 
+</div>  -->                
 
-
+<!-- <div class="project-background-image"></div>
+ -->
                   <section class="grid default-grid">
 
 
@@ -132,10 +135,10 @@
     <div class="row sample-row">
           <div class="col-xs-6 col-sm-4 gutter-margin-xs-md">
             <div class="inner">                  
-             <header>
+             <header style="text-align:center;">
               <img src="./images/new crop pic.jpg">
               <br><br>
-              <h2>Who's This Guy ?</h2>         
+              <h2 style="color:white;">Who's This Guy ?</h2>         
              </header>               
           </div>
          </div>
@@ -144,8 +147,47 @@
 
       <div class="col-xs-6 col-sm-8 gutter-margin-xs-md">
         <div class="inner">
-AirTrain JFK is an 8.1-mile-long (13 km) elevated people mover system and rail link serving John F. Kennedy International Airport in New York City. Its three lines and ten stations, operated by the Canadian firm Bombardier Transportation, connect the airport's six terminals with the New York City Subway in Howard Beach, Queens, and with the Long Island Rail Road and subway in Jamaica, Queens. In-depth planning for a dedicated transport system at JFK began in 1990, and construction commenced in 1998. The system opened in December 2003 after multiple delays. Since then, several improvements have been proposed for AirTrain JFK, including an extension to Manhattan. The system was originally projected to carry 4 million annual paying passengers and 8.4 million annual inter-terminal passengers, but the AirTrain has consistently exceeded these projections; in 2017, it had approximately 7.66 million paying passengers and 12.6 million inter-terminal passengers. (Full article...)
+<b>An Engineer by profession, Writer by chance, Maker and Startup Enthusiast and a avid Reader.</b> <br><br>
 
+My name is Vinit Todai, a Computer Engineering student from Mumbai, India.  I like to code, which I think every Engineer should! I always go for end-to-end integration of a product, right from Hardware to Software. I have represented my latest project, Brain Controlled Wheelchair in a variety of competitions. 
+<br>Some are mentioned below : <br><br>
+
+
+
+<!-- <ul id="achievements" style="list-style-type:square;">
+  <li>Quarter Finalist at IICDC ( India Innovation Challenge Design Contest 2018 ) for Project of “Brain Controlled Wheelchair” (Top 350 out of 10,146 teams)</li>
+  <li>Regional Finalist at e-Yantra Ideas Competition by IIT Bombay
+</li>
+  <li>Maker at Maker Mela, India's biggest Maker Gathering
+</li>
+ <li>Qualified for Natarajan Education Society Innovation Awards ( Top 50 out of thousands of projects)
+</li>
+ <li>Winner, Hackathon 2.0 organized by VJTI Startup Cell and E-Cell
+</li>
+</ul> -->
+
+
+
+
+
+
+<a class="fa fa-angle-double-right"></a> 
+Quarter Finalist at IICDC ( India Innovation Challenge Design Contest 2018 ) for Project of “Brain Controlled Wheelchair” (Top 350 out of 10,146 teams)
+<br>
+<a class="fa fa-angle-double-right"></a> 
+Regional Finalist at e-Yantra Ideas Competition by IIT Bombay
+<br>
+
+<a class="fa fa-angle-double-right"></a> 
+Maker at Maker Mela, India's biggest Maker Gathering
+<br>
+
+<a class="fa fa-angle-double-right"></a> 
+Qualified for Natarajan Education Society Innovation Awards ( Top 50 out of thousands of projects)
+<br>
+
+<a class="fa fa-angle-double-right"></a> 
+Winner, Hackathon 2.0 organized by VJTI Startup Cell and E-Cell
       </div>
     </div>
   </div>
@@ -153,16 +195,30 @@ AirTrain JFK is an 8.1-mile-long (13 km) elevated people mover system and rail l
 </section>
 
                   <div class="resume-block">
-                    <div class="section-label--right">skills</div>
+
                     <div class="resume-skills--desktop">
-                      <div class="resume-skills">
-                        <ul>
-                          <li>expert</li>
-                          <li>advanced</li>
-                          <li>intermediate</li>
+
+                      <div class="row sample-row">
+                        <div class="col-xs-6 col-sm-4 gutter-margin-xs-md">
+                      <div>
+                      <!--   <ul>
+                          <li>expert</li><br>
+                          <li>advanced</li><br>
+                          <li>intermediate</li><br>
                           <li>beginner</li>
-                        </ul>
+                        </ul> -->
+
+
+                          <h4 style="color:white; text-align:justify; padding-left:80px; padding-bottom:3px">expert</h4>
+                          <h4 style="color:white; text-align:justify; padding-left:80px; padding-bottom:3px">advanced</h4>
+                          <h4 style="color:white; text-align:justify; padding-left:80px; padding-bottom:3px">intermediate</h4>
+                          <h4 style="color:white; text-align:justify; padding-left:80px; padding-bottom:3px">beginner</h4>
+
                       </div>
+                    </div>
+
+
+<div class="col-xs-6 col-sm-4 gutter-margin-xs-md">
                       <figure id="resume-figure">
 
                           <div class="programming">
@@ -172,7 +228,7 @@ AirTrain JFK is an 8.1-mile-long (13 km) elevated people mover system and rail l
 
 
                           <div class="bar">
-                            <div class="advanced"></div>
+                            <div class="expert"></div>
                             <div class="graph-header"></div>
                             <label>Java</label>
                           </div>
@@ -184,7 +240,7 @@ AirTrain JFK is an 8.1-mile-long (13 km) elevated people mover system and rail l
                           </div>
 
                           <div class="bar">
-                            <div class="advanced"></div>
+                            <div class="expert"></div>
                             <div class="graph-header"></div>
                             <label>Android</label>
                           </div>
@@ -197,46 +253,42 @@ AirTrain JFK is an 8.1-mile-long (13 km) elevated people mover system and rail l
 
 
                           <div class="bar">
-                            <div class="advanced"></div>
+                            <div class="intermediate"></div>
                             <div class="graph-header"></div>
                             <label>R</label>
                           </div>
 
                           <div class="bar">
-                            <div class="advanced"></div>
+                            <div class="intermediate"></div>
                             <div class="graph-header"></div>
                             <label>PROLOG</label>
                           </div>
 
                            <div class="bar">
-                            <div class="advanced"></div>
+                            <div class="intermediate"></div>
                             <div class="graph-header"></div>
                             <label>AutoCAD</label>
                           </div>
 
                            <div class="bar">
-                            <div class="advanced"></div>
+                            <div class="beginner"></div>
                             <div class="graph-header"></div>
                             <label>Solidworks</label>
                           </div>
 
                           <div class="bar">
-                            <div class="intermediate"></div>
+                            <div class="advanced"></div>
                             <div class="graph-header"></div>
                             <label>MySQL</label>
                           </div>
 
                           <div class="bar">
-                            <div class="beginner"></div>
+                            <div class="intermediate"></div>
                             <div class="graph-header"></div>
                             <label>Python</label>
                           </div>
 
-                          <div class="bar">
-                            <div class="beginner"></div>
-                            <div class="graph-header dark"></div>
-                            <label>Ruby on Rails</label>
-                          </div>
+                         
                         </div>
 
                     <div class="design">
@@ -244,7 +296,7 @@ AirTrain JFK is an 8.1-mile-long (13 km) elevated people mover system and rail l
                             Hardware
                           </p>
                           <div class="bar">
-                            <div class="beginner"></div>
+                            <div class="expert"></div>
                             <div class="graph-header"></div>
                             <label>Raspberry pi</label>
                           </div>
@@ -256,7 +308,7 @@ AirTrain JFK is an 8.1-mile-long (13 km) elevated people mover system and rail l
                           </div>
 
                           <div class="bar">
-                            <div class="advanced"></div>
+                            <div class="intermediate"></div>
                             <div class="graph-header dark"></div>
                             <label>MSP430</label>
                           </div>
@@ -283,11 +335,7 @@ AirTrain JFK is an 8.1-mile-long (13 km) elevated people mover system and rail l
                             <label>JavaScript</label>
                           </div>
 
-                          <div class="bar">
-                            <div class="expert"></div>
-                            <div class="graph-header"></div>
-                            <label>HAML</label>
-                          </div>
+                         
 
                           <div class="bar">
                             <div class="expert"></div>
@@ -295,17 +343,9 @@ AirTrain JFK is an 8.1-mile-long (13 km) elevated people mover system and rail l
                             <label>HTML</label>
                           </div>
 
-                          <div class="bar">
-                            <div class="intermediate"></div>
-                            <div class="graph-header"></div>
-                            <label>CoffeeScript</label>
-                          </div>
+                        
 
-                          <div class="bar">
-                            <div class="expert"></div>
-                            <div class="graph-header dark"></div>
-                            <label>SASS</label>
-                          </div>
+                         
                         </div>
 
 
@@ -326,7 +366,7 @@ AirTrain JFK is an 8.1-mile-long (13 km) elevated people mover system and rail l
                           </div>
 
                           <div class="bar">
-                            <div class="expert"></div>
+                            <div class="intermediate"></div>
                             <div class="graph-header dark"></div>
                             <label>Windows</label>
                           </div>
@@ -342,6 +382,7 @@ AirTrain JFK is an 8.1-mile-long (13 km) elevated people mover system and rail l
 
                       </figure>
                     </div>
+                    </div>
                   </div>
             </section>
 
@@ -354,7 +395,7 @@ AirTrain JFK is an 8.1-mile-long (13 km) elevated people mover system and rail l
     <div class="section" id="tab-PROJECTS">
         <div class="slide" data-anchor="slide1"> 
 
-            <section>
+            <section id="project_background">
 
                 <br><br><br><br><br><br><br>
 
@@ -403,7 +444,7 @@ AirTrain JFK is an 8.1-mile-long (13 km) elevated people mover system and rail l
                               #BCI #AI 
                             </h4> -->
                             <a href="https://github.com/vinit-2997" class="fa fa-fw fa-github"></a>
-                            <a class="fa fa-external-link" aria-hidden="true"></a>
+                            <a href="https://vinittodai.wixsite.com/brainhack-wheelchair"class="fa fa-external-link" aria-hidden="true"></a>
                             
                           </div>
                         </article>
@@ -442,7 +483,7 @@ AirTrain JFK is an 8.1-mile-long (13 km) elevated people mover system and rail l
                               #BCI #AI 
                             </h4> -->
                             <a href="https://github.com/vinit-2997" class="fa fa-fw fa-github"></a>
-                            <a class="fa fa-external-link" aria-hidden="true"></a>
+                            <a href="https://vinittodai.wixsite.com/brainhack-lights" class="fa fa-external-link" aria-hidden="true"></a>
                             
                           </div>
                         </article>
@@ -480,7 +521,7 @@ AirTrain JFK is an 8.1-mile-long (13 km) elevated people mover system and rail l
                               #BCI #AI 
                             </h4> -->
                             <a href="https://github.com/vinit-2997" class="fa fa-fw fa-github"></a>
-                            <a class="fa fa-external-link" aria-hidden="true"></a>
+                            <a href="https://vinittodai.wixsite.com/brainhack-robot" class="fa fa-external-link" aria-hidden="true"></a>
                             
                           </div>
                         </article>
@@ -722,7 +763,7 @@ AirTrain JFK is an 8.1-mile-long (13 km) elevated people mover system and rail l
                            <!--  <h4>
                               #BCI #AI 
                             </h4> -->
-                            <a href="https://github.com/vinit-2997" class="fa fa-fw fa-github"></a>
+                            <a href="https://github.com/vinit-2997/tremble-turn" class="fa fa-fw fa-github"></a>
                             <a class="fa fa-external-link" aria-hidden="true"></a>
                             
                           </div>
@@ -844,7 +885,7 @@ AirTrain JFK is an 8.1-mile-long (13 km) elevated people mover system and rail l
                            <!--  <h4>
                               #BCI #AI 
                             </h4> -->
-                            <a href="https://github.com/vinit-2997" class="fa fa-fw fa-github"></a>
+                            <a href="https://github.com/vinit-2997/pwa_new" class="fa fa-fw fa-github"></a>
                             <a class="fa fa-external-link" aria-hidden="true"></a>
                             
                           </div>

@@ -8,18 +8,18 @@
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
 body{line-height:1}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-nav ul{list-style:none}
-blockquote,q{quotes:none}
+/*nav ul{list-style:none}
+*/blockquote,q{quotes:none}
 blockquote:before,blockquote:after,q:before,q:after{content:none}
-a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+a{margin:0;padding:1;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
 mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
 del{text-decoration:line-through}
 abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
 table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 input,select{vertical-align:middle}
-li{list-style:none}
-
+/*li{list-style:none}
+*/
 
 /* =============================================================================
    My CSS
@@ -525,10 +525,18 @@ h2 {
 ul li {
   display: inline-block;
   transition: .3s all ease-in-out;
+  list-style-type: circle;
   -webkit-transition: .3s all ease-in-out;
   -moz-transition: .3s all ease-in-out;
   -o-transition: .3s all ease-in-out;
   -ms-transition: .3s all ease-in-out;
+}
+
+#achievements>li
+{
+/*    display: inline-block;
+*/    list-style-type: circle;
+
 }
 
 ul img {
@@ -554,6 +562,7 @@ ul img:hover {
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
+  
 }
 
 .fa:hover {
@@ -930,7 +939,8 @@ a {
   left: 30px;
   bottom: 54px;*/
   font-size: 90%;
-   
+   font-family: "Comic Sans MS";
+  line-height:1.1;
   overflow: hidden;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -2114,6 +2124,15 @@ h3 {
   text-align: center;
   height: 1000px;
   -webkit-transition: all .8s ease-in-out; 
+
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 }
 
 .tabcontent:target {
@@ -2123,11 +2142,63 @@ h3 {
 
 }
 
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 /* Style each tab content individually */ 
-#London {background-color:red;}
+/*#London {background-color:red;}
 #Paris {background-color:green;}
 #Tokyo {background-color:blue;}
 #Oslo {background-color:orange;}
+*/
+
+#project_background 
+{  
+  background-image: url('../images/projects_background.jpg');
+  background-size: cover;
+  overflow: auto;
+
+/*  filter: blur(8px);
+    -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);*/
+}
+
+
+/*.project-background-image
+{
+
+  background-size: cover;
+  display: block;
+    background-image: url('../images/projects_background.jpg');
+  background-size: cover;
+  overflow: auto;
+    height: 100vh;
+  left: 0;
+  position: fixed;
+  right: 0;
+  filter: blur(8px);
+    -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+   z-index: -1;
+}*/
+
+/*#tab-ABOUT
+{  
+  background-image: url('../images/about_background.jpg');
+  background-size: cover;
+}
+*/
+/*#Paris {background-color:green;}
+#Tokyo {background-color:blue;}
+#Oslo {background-color:orange;}*/
 
 
 
@@ -3159,16 +3230,22 @@ section.grid p {
 }
 
 div.sample-row div.inner {
-  background: #EF5858;
-  border: 1px solid #eb3333;
+  background: #3355FF;
+  border: 3px solid #eb3333;
   color: white;
   padding: 15px;
+  text-align: justify;
+  border-radius: 10px;
+  font-family: "Comic Sans MS";
+  line-height:1.1;
 }
 div.sample-row div.inner.logo {
   padding: 50px 0;
   min-height: 123px;
 }
-div.sample-row div.inner div.inner {
+
+
+/*div.sample-row div.inner div.inner {
   background: #eb3333;
   border: 1px solid #e91b1b;
 }
@@ -3201,5 +3278,5 @@ div.sample-row div.inner div.inner {
     background: #a52424;
     border: 1px solid #901f1f;
   }
-}
+}*/
 
