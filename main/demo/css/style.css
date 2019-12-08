@@ -708,7 +708,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
     background: #000000;
     text-align: center;
@@ -2124,7 +2124,7 @@ h3 {
   display: none;
   padding: 100px;
   text-align: center;
-  height: 1000px;
+  /* height: 1000px; */
   -webkit-transition: all .8s ease-in-out; 
 
   animation: fadeEffect 1s; /* Fading effect takes 1 second */
